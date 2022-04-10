@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Game layout</title>
+  <link rel="stylesheet" href="configurations/custom.css">
+
+  <script>
+  function turnColor() {
+
+    // 200 milliseconds after participants make a choice,
+    // turn the color card; the animation lasts 500 ms.
+    setTimeout(function(){
+      document.getElementById("color_card").classList.add("is-flipped");
+      // play audio
+      document.getElementById("flip_audio").play();
+    }, 200);
+
+    // after the card is flipped, show the outcome in text
+    setTimeout(function(){
+
+      document.getElementById("game1_outcome").textContent = "+20";
+
+    }, 700);
+  }
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id = "game-area">
+     <img src onerror="turnColor();">
+
+     <div id="game1_instruction">Blue or Orange?</div>
+
+     <div class = "F_button selected"><img src="images/blue_F.png"></div>
+     <div class = "J_button selected"><img src="images/yellow_J.png"></div>
+
+     <div class="flip-color">
+       <div id = "color_card" class="flip-color-inner">
+         <div class="flip-color-front"><img src="images/mixed.png"></div>
+         <div class="flip-color-back"><img src="images/blue.png"></div>
+       </div>
+     </div>
+
+      <audio id="flip_audio" src="card_flip.mp3"></audio>
+      <div id = "guess_outcome">xxx</div>
+
+      <div id = "balance"> Total: € 1.00 </div>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

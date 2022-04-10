@@ -1,0 +1,194 @@
+---
+title: "Intertemporal choices in gambling - check data"
+author: 
+  - Zhang Chen^[Department of Experimental Psychology, Ghent University, Zhang.Chen@UGent.be]
+date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+output: 
+  html_document:
+    code_folding: hide
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.align = "center")
+```
+
+This file contains the R code that I use to check the data when programming the experiment.
+
+```{r load libraries}
+# load libraries
+library(tidyverse)
+
+theme_set(theme_bw())
+
+```
+
+# Load test data
+
+```{r load raw data files}
+# Participants may refresh the experiment, which will restart the experiment.
+# Here I define a function that reads a csv file, and adds a new variable 
+# 'attempt' that stands for from which attempt each data row comes from.
+# For instance, if a participant re-started the experiment, all data from the 
+# second time will be from attempt 2, and so forth.
+read_csv_add_attempt <- function(file_name) {
+  
+  # read the raw data file
+  d_tmp <- read_csv(file_name, col_types = cols(.default = col_character()))
+  
+  # initialize the new variable 'attempt'
+  d_tmp$attempt <- 0
+  
+  # each time when participants restarted the experiment,
+  # the header would be written to the file as a row
+  # thus, each time when the headers occurred in the file
+  # we know that participants have re-started the experiment
+  d_tmp <- d_tmp %>%
+    mutate(
+      attempt_increment = ifelse(time_elapsed == "time_elapsed", 1, 0),
+      attempt = attempt + attempt_increment,
+      attempt = cumsum(attempt),
+      # the attempt variable starts counting from 0, change it into 1
+      attempt = attempt + 1
+    ) %>%
+    # delete the variable attempt_increment
+    select(-attempt_increment) %>%
+    # delete the rows that include the header
+    filter(time_elapsed != 'time_elapsed')
+  
+  return(d_tmp)
+  
+}
+
+# get a list of all files containing the main data
+main_file_list <- list.files("../../data/raw/",
+                             pattern = "Gambling_ITC_main",
+                             full.names = TRUE)
+
+# load data
+d_main <- main_file_list %>%
+  map_dfr(read_csv_add_attempt)
+
+# change the data type of variables
+d_main <- d_main %>%
+  mutate(
+    across(c(block_number, trial_number, delay_time, immediate_amount), as.numeric),
+    across(c(respRT, blur_count:attempt), as.numeric)
+  )
+```
+
+# Clean data
+
+```{r clean data}
+attempt_count <- d_main %>%
+  count(prolific_ID, attempt)
+
+
+# we define one trial as consisting of one guessing game and one choice game
+# each trial then consists of 8 'stages'
+# count the number of stages per trial and the number of trials per block 
+
+stage_count <- d_main %>%
+  count(prolific_ID, block_number, trial_number)
+
+trial_count <- stage_count %>%
+  count(prolific_ID, block_number)
+
+# turn the data into wide format, so that one row contains data from one trial
+# first do this for the RT data
+d_RT_wide <- d_main %>%
+  pivot_wider(
+    id_cols = c(prolific_ID:trial_number, guess_outcome:immediate_amount),
+    names_from = stage,
+    names_prefix = "RT_",
+    values_from = respRT) %>%
+  # delete variables we do not need
+  select(-c(RT_guess_outcome, RT_ITC_wait, RT_ITC_outcome))
+
+# then do this for the keys pressed data
+d_keys_wide <- d_main %>%
+  pivot_wider(
+    id_cols = c(prolific_ID, block_number, trial_number),
+    names_from = stage,
+    names_prefix = "key_",
+    values_from = respKey) %>%
+  # delete variables we do not need
+  select(-c(key_guess_outcome, key_ITC_wait, key_ITC_outcome))
+
+# then do this for the number of 'blur' (when participants leave the current page)
+# and 'focus' (when participants enter the current page)
+# to simplify things a bit, here we take the sum of both counts
+d_blur_wide <- d_main %>%
+  mutate(blur_count = blur_count + focus_count) %>%
+  pivot_wider(
+    id_cols = c(prolific_ID, block_number, trial_number),
+    names_from = stage,
+    names_prefix = "blur_",
+    values_from = blur_count)
+
+# now put everything together
+d_wide <- d_RT_wide %>%
+  full_join(d_keys_wide, by = c("prolific_ID", "block_number", "trial_number")) %>%
+  full_join(d_blur_wide, by = c("prolific_ID", "block_number", "trial_number"))
+
+# add a new variable for the choice in intertemporal choices
+d_wide <- d_wide %>%
+  mutate(
+    ITC_chosen_pos = ifelse(key_ITC_choice == "f", "left", "right"),
+    ITC_choice = ifelse(ITC_chosen_pos == delay_pos, "delay", "immediate")
+  )
+
+# save the cleaned data as a csv file
+write_csv(d_wide, file = "../../data/test/data_cleaned.csv")
+```
+
+# Check data
+
+```{r check data}
+# check the number of trials finished by participants
+trial_count <- d_wide %>% count(prolific_ID, block_number)
+
+# each repetition of the full design contains 72 trials
+# check the number of trials within each repetition
+d_wide <- d_wide %>%
+  mutate(rep = ceiling(trial_number/72))
+
+trial_count <- d_wide %>%
+  count(prolific_ID, rep, guess_outcome, delay_time)
+
+# remove incomplete trials
+d_wide <- d_wide %>% drop_na()
+
+d_cleaned <- d_wide %>%
+  group_by(prolific_ID, rep, delay_time, immediate_amount) %>%
+  mutate(ntrial = n()) %>%
+  filter(ntrial == 3)
+
+immediate_prop <- d_cleaned %>%
+  group_by(prolific_ID, delay_time, immediate_amount) %>%
+  summarise(immediate_prop = mean(ITC_choice == "immediate") * 100)
+
+# effects of gambling outcomes on response vigor
+d_startRT <- d_wide %>%
+  filter(RT_ITC_start < 5000) %>%
+  group_by(prolific_ID, guess_outcome) %>%
+  summarize(
+    ntrial = n(),
+    startRT = mean(RT_ITC_start)
+  )
+
+# effects of gambling outcomes on inter-temporal choices
+d_temporal_choices <- d_wide %>%
+  group_by(prolific_ID, block_number, guess_outcome) %>%
+  summarize(
+    ntrial = n(),
+    choice = mean(ITC_choice == "delay") * 100
+  )
+```
+

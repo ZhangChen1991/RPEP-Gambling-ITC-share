@@ -1,0 +1,1266 @@
+subjectID,task,number,now,delayed,selected,choice,rt,time_elapsed,attempt
+10,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6244,3778505,1
+10,MCQ,2,€55 today,€75 in 61 days,€55 today,now,6516,3785027,1
+10,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,8933,3793965,1
+10,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,28169,3822138,1
+10,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4554,3826696,1
+10,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4354,3831056,1
+10,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,13451,3844514,1
+10,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3210,3847729,1
+10,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,8090,3855822,1
+10,MCQ,10,€40 today,€55 in 62 days,€40 today,now,6017,3861845,1
+10,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,4384,3866233,1
+10,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4938,3871176,1
+10,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3890,3875073,1
+10,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,8252,3883330,1
+10,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,5529,3888863,1
+10,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3737,3892605,1
+10,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2876,3895486,1
+10,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,3175,3898665,1
+10,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2066,3900734,1
+10,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3197,3903935,1
+10,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1987,3905926,1
+10,MCQ,22,€25 today,€30 in 80 days,€25 today,now,4007,3909937,1
+10,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2256,3912199,1
+10,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3011,3915214,1
+10,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2476,3917697,1
+10,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,2250,3919952,1
+10,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2796,3922753,1
+11,MCQ,1,€54 today,€55 in 117 days,€54 today,now,10173,3496121,1
+11,MCQ,2,€55 today,€75 in 61 days,€55 today,now,5663,3501786,1
+11,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4056,3505845,1
+11,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3588,3509436,1
+11,MCQ,5,€14 today,€25 in 19 days,€14 today,now,3231,3512669,1
+11,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3516,3516188,1
+11,MCQ,7,€15 today,€35 in 13 days,€15 today,now,3408,3519599,1
+11,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2766,3522367,1
+11,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3100,3525470,1
+11,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2823,3528295,1
+11,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,5535,3533832,1
+11,MCQ,12,€67 today,€75 in 119 days,€67 today,now,5662,3539496,1
+11,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3700,3543199,1
+11,MCQ,14,€27 today,€50 in 21 days,€27 today,now,7275,3550477,1
+11,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3323,3553803,1
+11,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3334,3557139,1
+11,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3083,3560224,1
+11,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2694,3562920,1
+11,MCQ,19,€33 today,€80 in 14 days,€33 today,now,3447,3566369,1
+11,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2626,3568997,1
+11,MCQ,21,€34 today,€50 in 30 days,€34 today,now,3453,3572453,1
+11,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2603,3575058,1
+11,MCQ,23,€41 today,€75 in 20 days,€41 today,now,2691,3577752,1
+11,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2361,3580116,1
+11,MCQ,25,€54 today,€80 in 30 days,€54 today,now,2512,3582631,1
+11,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3269,3585902,1
+11,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,4528,3590433,1
+12,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5339,4277080,1
+12,MCQ,2,€55 today,€75 in 61 days,€55 today,now,3149,4280239,1
+12,MCQ,3,€19 today,€25 in 53 days,€19 today,now,2351,4282599,1
+12,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2033,4284641,1
+12,MCQ,5,€14 today,€25 in 19 days,€14 today,now,1911,4286559,1
+12,MCQ,6,€47 today,€50 in 160 days,€47 today,now,1665,4288233,1
+12,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,4164,4292406,1
+12,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2253,4294668,1
+12,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2457,4297133,1
+12,MCQ,10,€40 today,€55 in 62 days,€40 today,now,1926,4299068,1
+12,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2433,4301510,1
+12,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2335,4303853,1
+12,MCQ,13,€34 today,€35 in 186 days,€34 today,now,1959,4305821,1
+12,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3665,4309495,1
+12,MCQ,15,€69 today,€85 in 91 days,€69 today,now,1747,4311251,1
+12,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2523,4313782,1
+12,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2008,4315798,1
+12,MCQ,18,€24 today,€35 in 29 days,€24 today,now,1747,4317553,1
+12,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2196,4319758,1
+12,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2204,4321970,1
+12,MCQ,21,€34 today,€50 in 30 days,€34 today,now,1992,4323971,1
+12,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1747,4325726,1
+12,MCQ,23,€41 today,€75 in 20 days,€41 today,now,1486,4327220,1
+12,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2694,4329922,1
+12,MCQ,25,€54 today,€80 in 30 days,€54 today,now,2586,4332517,1
+12,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2540,4335066,1
+12,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1998,4337074,1
+13,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6582,3109652,1
+13,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6038,3115693,1
+13,MCQ,3,€19 today,€25 in 53 days,€19 today,now,9245,3124941,1
+13,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3873,3128819,1
+13,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5254,3134076,1
+13,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4000,3138076,1
+13,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2950,3141029,1
+13,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3701,3144734,1
+13,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3283,3148020,1
+13,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2863,3150885,1
+13,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3052,3153942,1
+13,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,2764,3156709,1
+13,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3422,3160134,1
+13,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2939,3163076,1
+13,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2557,3165636,1
+13,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2021,3167660,1
+13,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3383,3171045,1
+13,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2644,3173691,1
+13,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2415,3176109,1
+13,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3127,3179239,1
+13,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2419,3181661,1
+13,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,3634,3185297,1
+13,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2106,3187405,1
+13,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,3398,3190806,1
+13,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2811,3193621,1
+13,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,3086,3196710,1
+13,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2582,3199295,1
+14,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5732,3050276,1
+14,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3543,3053825,1
+14,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4894,3058724,1
+14,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2311,3061040,1
+14,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3662,3064707,1
+14,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3513,3068223,1
+14,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2345,3070573,1
+14,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2912,3073490,1
+14,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2228,3075722,1
+14,MCQ,10,€40 today,€55 in 62 days,€40 today,now,3465,3079190,1
+14,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1713,3080907,1
+14,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2245,3083156,1
+14,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2647,3085807,1
+14,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2379,3088190,1
+14,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2613,3090808,1
+14,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3295,3094107,1
+14,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2762,3096873,1
+14,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2313,3099190,1
+14,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3545,3102740,1
+14,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2296,3105040,1
+14,MCQ,21,€34 today,€50 in 30 days,€34 today,now,1512,3106557,1
+14,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1496,3108057,1
+14,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2296,3110357,1
+14,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2446,3112807,1
+14,MCQ,25,€54 today,€80 in 30 days,€54 today,now,1329,3114140,1
+14,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1129,3115273,1
+14,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2314,3117590,1
+15,MCQ,1,€54 today,€55 in 117 days,€54 today,now,4034,3168797,1
+15,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3008,3171810,1
+15,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,1995,3173809,1
+15,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2014,3175827,1
+15,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2923,3178753,1
+15,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3231,3181988,1
+15,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,1871,3183863,1
+15,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1951,3185818,1
+15,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2362,3188183,1
+15,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2130,3190316,1
+15,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1732,3192051,1
+15,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2744,3194799,1
+15,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2343,3197146,1
+15,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2609,3199759,1
+15,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2445,3202207,1
+15,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3762,3205972,1
+15,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,2135,3208112,1
+15,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,4179,3212294,1
+15,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1459,3213757,1
+15,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2791,3216552,1
+15,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1859,3218414,1
+15,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,2607,3221024,1
+15,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1474,3222501,1
+15,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2142,3224646,1
+15,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1687,3226337,1
+15,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,2333,3228672,1
+15,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2463,3231139,1
+16,MCQ,1,€54 today,€55 in 117 days,€54 today,now,39285,3339307,1
+16,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,12693,3352011,1
+16,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,9452,3361475,1
+16,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,7662,3369146,1
+16,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,1958,3371114,1
+16,MCQ,6,€47 today,€50 in 160 days,€50 in 160 days,wait,1723,3372848,1
+16,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,1095,3373951,1
+16,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,754,3374711,1
+16,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,811,3375531,1
+16,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,965,3376503,1
+16,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1000,3377512,1
+16,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,2102,3379621,1
+16,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2032,3381664,1
+16,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1415,3383085,1
+16,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,1629,3384720,1
+16,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,7201,3391925,1
+16,MCQ,17,€80 today,€85 in 157 days,€80 today,now,5829,3397758,1
+16,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2213,3399975,1
+16,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2279,3402257,1
+16,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1769,3404028,1
+16,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1123,3405154,1
+16,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,3540,3408698,1
+16,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1872,3410579,1
+16,MCQ,24,€54 today,€60 in 111 days,€54 today,now,1444,3412026,1
+16,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1166,3413195,1
+16,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3820,3417020,1
+16,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1340,3418365,1
+17,MCQ,1,€54 today,€55 in 117 days,€54 today,now,4620,3386563,1
+17,MCQ,2,€55 today,€75 in 61 days,€55 today,now,4092,3390658,1
+17,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3022,3393682,1
+17,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2138,3395822,1
+17,MCQ,5,€14 today,€25 in 19 days,€14 today,now,3456,3399280,1
+17,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2487,3401770,1
+17,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3206,3404977,1
+17,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2455,3407435,1
+17,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2461,3409898,1
+17,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2484,3412384,1
+17,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2087,3414472,1
+17,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2270,3416744,1
+17,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2054,3418800,1
+17,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2319,3421121,1
+17,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3139,3424262,1
+17,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3102,3427367,1
+17,MCQ,17,€80 today,€85 in 157 days,€80 today,now,4247,3431616,1
+17,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3324,3434942,1
+17,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3881,3438824,1
+17,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3435,3442262,1
+17,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3074,3445337,1
+17,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2570,3447909,1
+17,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1837,3449748,1
+17,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2106,3451855,1
+17,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2305,3454162,1
+17,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2187,3456352,1
+17,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1885,3458239,1
+18,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6631,74403426,1
+18,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6934,74410367,1
+18,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,7282,74417653,1
+18,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3483,74421139,1
+18,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5804,74426946,1
+18,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3285,74430235,1
+18,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2443,74432683,1
+18,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2308,74434994,1
+18,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,16715,74451713,1
+18,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,10117,74461834,1
+18,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2230,74464067,1
+18,MCQ,12,€67 today,€75 in 119 days,€67 today,now,8112,74472184,1
+18,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2793,74474980,1
+18,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3294,74478277,1
+18,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,5280,74483560,1
+18,MCQ,16,€49 today,€60 in 89 days,€49 today,now,4208,74487771,1
+18,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3675,74491449,1
+18,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2143,74493595,1
+18,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2380,74495979,1
+18,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2603,74498585,1
+18,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2443,74501032,1
+18,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3603,74504638,1
+18,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2361,74507004,1
+18,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3057,74510064,1
+18,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1838,74511906,1
+18,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2562,74514471,1
+18,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1179,74515654,1
+19,MCQ,1,€54 today,€55 in 117 days,€55 in 117 days,wait,13474,4103395,1
+19,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,5816,4109216,1
+19,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4157,4113377,1
+19,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4258,4117639,1
+19,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5164,4122807,1
+19,MCQ,6,€47 today,€50 in 160 days,€50 in 160 days,wait,9052,4131864,1
+19,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,5889,4137758,1
+19,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3485,4141247,1
+19,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,10572,4151822,1
+19,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,3943,4155768,1
+19,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2801,4158574,1
+19,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,3840,4162417,1
+19,MCQ,13,€34 today,€35 in 186 days,€35 in 186 days,wait,8119,4170539,1
+19,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2862,4173406,1
+19,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2705,4176116,1
+19,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3044,4179165,1
+19,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,5148,4184316,1
+19,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2660,4186979,1
+19,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3068,4190052,1
+19,MCQ,20,€28 today,€30 in 179 days,€30 in 179 days,wait,5108,4195164,1
+19,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2547,4197715,1
+19,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,2526,4200244,1
+19,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,7855,4208104,1
+19,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,4337,4212445,1
+19,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,3171,4215619,1
+19,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,3612,4219234,1
+19,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2722,4221960,1
+20,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6404,3750112,1
+20,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3776,3753891,1
+20,MCQ,3,€19 today,€25 in 53 days,€19 today,now,5227,3759120,1
+20,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3772,3762895,1
+20,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,7343,3770240,1
+20,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3777,3774019,1
+20,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,7554,3781575,1
+20,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,4240,3785817,1
+20,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3171,3788990,1
+20,MCQ,10,€40 today,€55 in 62 days,€40 today,now,8731,3797723,1
+20,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3082,3800807,1
+20,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4144,3804952,1
+20,MCQ,13,€34 today,€35 in 186 days,€34 today,now,6509,3811463,1
+20,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2448,3813913,1
+20,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3496,3817410,1
+20,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3132,3820543,1
+20,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2399,3822944,1
+20,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3033,3825978,1
+20,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3054,3829033,1
+20,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3162,3832196,1
+20,MCQ,21,€34 today,€50 in 30 days,€34 today,now,5441,3837638,1
+20,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2697,3840337,1
+20,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,3659,3843998,1
+20,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2969,3846969,1
+20,MCQ,25,€54 today,€80 in 30 days,€54 today,now,4407,3851377,1
+20,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3382,3854761,1
+20,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,5026,3859789,1
+21,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5703,3329887,1
+21,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3653,3333543,1
+21,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,3550,3337095,1
+21,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3814,3340911,1
+21,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2646,3343564,1
+21,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3286,3346852,1
+21,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2574,3349428,1
+21,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2862,3352292,1
+21,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3615,3355908,1
+21,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2430,3358340,1
+21,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1982,3360324,1
+21,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,6311,3366636,1
+21,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2719,3369356,1
+21,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2038,3371396,1
+21,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2095,3373492,1
+21,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,1846,3375340,1
+21,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2751,3378092,1
+21,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1783,3379876,1
+21,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1679,3381556,1
+21,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1879,3383436,1
+21,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1726,3385164,1
+21,MCQ,22,€25 today,€30 in 80 days,€25 today,now,5015,3390180,1
+21,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1630,3391812,1
+21,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,2383,3394196,1
+21,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1558,3395756,1
+21,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1854,3397612,1
+21,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1654,3399268,1
+22,MCQ,1,€54 today,€55 in 117 days,€54 today,now,7764,3815746,1
+22,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,7041,3822792,1
+22,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4539,3827335,1
+22,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3863,3831202,1
+22,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,6748,3837954,1
+22,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3388,3841346,1
+22,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3339,3844691,1
+22,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2222,3846917,1
+22,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,7116,3854038,1
+22,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,3478,3857521,1
+22,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1781,3859307,1
+22,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4579,3863892,1
+22,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2981,3866877,1
+22,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2532,3869414,1
+22,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,5167,3874586,1
+22,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2630,3877220,1
+22,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2606,3879831,1
+22,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,3273,3883109,1
+22,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2263,3885377,1
+22,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3208,3888591,1
+22,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2509,3891103,1
+22,MCQ,22,€25 today,€30 in 80 days,€25 today,now,5255,3896362,1
+22,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1841,3898207,1
+22,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3559,3901771,1
+22,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1945,3903721,1
+22,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2971,3906697,1
+22,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1906,3908607,1
+23,MCQ,1,€54 today,€55 in 117 days,€54 today,now,13492,4137561,2
+23,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,12797,4150364,2
+23,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,7996,4158363,2
+23,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,5607,4163974,2
+23,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,8872,4172849,2
+23,MCQ,6,€47 today,€50 in 160 days,€47 today,now,5863,4178715,2
+23,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2887,4181605,2
+23,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2899,4184505,2
+23,MCQ,9,€78 today,€80 in 14 days,€78 today,now,5772,4190280,2
+23,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,3072,4193356,2
+23,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2645,4196004,2
+23,MCQ,12,€67 today,€75 in 119 days,€67 today,now,9003,4205016,2
+23,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3721,4208741,2
+23,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2773,4211518,2
+23,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,4420,4215943,2
+23,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,5871,4221817,2
+23,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3420,4225240,2
+23,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,3179,4228423,2
+23,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3850,4232275,2
+23,MCQ,20,€28 today,€30 in 179 days,€28 today,now,4086,4236367,2
+23,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3081,4239451,2
+23,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,3955,4243408,2
+23,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,3429,4246840,2
+23,MCQ,24,€54 today,€60 in 111 days,€54 today,now,4491,4251333,2
+23,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2560,4253897,2
+23,MCQ,26,€22 today,€25 in 136 days,€22 today,now,4226,4258126,2
+23,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2497,4260627,2
+24,MCQ,1,€54 today,€55 in 117 days,€54 today,now,7599,3368384,1
+24,MCQ,2,€55 today,€75 in 61 days,€55 today,now,4766,3373156,1
+24,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3100,3376261,1
+24,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2693,3378958,1
+24,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3316,3382277,1
+24,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3172,3385454,1
+24,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,1943,3387402,1
+24,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1784,3389189,1
+24,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3044,3392239,1
+24,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2765,3395008,1
+24,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2143,3397155,1
+24,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3284,3400443,1
+24,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2565,3403011,1
+24,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1673,3404689,1
+24,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2813,3407506,1
+24,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,5286,3412798,1
+24,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2205,3415008,1
+24,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2671,3417681,1
+24,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1393,3419078,1
+24,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3350,3422431,1
+24,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1830,3424266,1
+24,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,1934,3426206,1
+24,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2023,3428232,1
+24,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2598,3430835,1
+24,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2013,3432854,1
+24,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1743,3434601,1
+24,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1984,3436589,1
+25,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6118,3296375,1
+25,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,4685,3301068,1
+25,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,6231,3307308,1
+25,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2656,3309972,1
+25,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4214,3314194,1
+25,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3370,3317572,1
+25,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2606,3320187,1
+25,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2470,3322665,1
+25,MCQ,9,€78 today,€80 in 14 days,€78 today,now,9832,3332506,1
+25,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,1775,3334290,1
+25,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1921,3336219,1
+25,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,3745,3339973,1
+25,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2289,3342271,1
+25,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1846,3344125,1
+25,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2578,3346711,1
+25,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2307,3349026,1
+25,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,2523,3351557,1
+25,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2841,3354407,1
+25,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1675,3356090,1
+25,MCQ,20,€28 today,€30 in 179 days,€28 today,now,8950,3365048,1
+25,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1526,3366583,1
+25,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,1942,3368532,1
+25,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1471,3370012,1
+25,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,1628,3371648,1
+25,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1538,3373194,1
+25,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3442,3376645,1
+25,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1298,3377951,1
+26,MCQ,1,€54 today,€55 in 117 days,€54 today,now,4646,5847884,1
+26,MCQ,2,€55 today,€75 in 61 days,€55 today,now,2127,5850017,1
+26,MCQ,3,€19 today,€25 in 53 days,€19 today,now,2404,5852427,1
+26,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,1879,5854312,1
+26,MCQ,5,€14 today,€25 in 19 days,€14 today,now,2725,5857041,1
+26,MCQ,6,€47 today,€50 in 160 days,€47 today,now,1889,5858935,1
+26,MCQ,7,€15 today,€35 in 13 days,€15 today,now,22832,5881773,1
+26,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2555,5884334,1
+26,MCQ,9,€78 today,€80 in 14 days,€78 today,now,6584,5890923,1
+26,MCQ,10,€40 today,€55 in 62 days,€40 today,now,1976,5892906,1
+26,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2411,5895322,1
+26,MCQ,12,€67 today,€75 in 119 days,€67 today,now,1735,5897062,1
+26,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3771,5900840,1
+26,MCQ,14,€27 today,€50 in 21 days,€27 today,now,1654,5902499,1
+26,MCQ,15,€69 today,€85 in 91 days,€69 today,now,1509,5904014,1
+26,MCQ,16,€49 today,€60 in 89 days,€49 today,now,1693,5905712,1
+26,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2306,5908024,1
+26,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2822,5910852,1
+26,MCQ,19,€33 today,€80 in 14 days,€33 today,now,5013,5915870,1
+26,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1935,5917811,1
+26,MCQ,21,€34 today,€50 in 30 days,€34 today,now,1461,5919277,1
+26,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1767,5921049,1
+26,MCQ,23,€41 today,€75 in 20 days,€41 today,now,2846,5923900,1
+26,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3039,5926945,1
+26,MCQ,25,€54 today,€80 in 30 days,€54 today,now,1444,5928395,1
+26,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1234,5929635,1
+26,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2467,5932109,1
+27,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6271,3601626,1
+27,MCQ,2,€55 today,€75 in 61 days,€55 today,now,4907,3606547,1
+27,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3689,3610249,1
+27,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3757,3614018,1
+27,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4823,3618855,1
+27,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3649,3622511,1
+27,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3373,3625898,1
+27,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,4993,3630896,1
+27,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3333,3634236,1
+27,MCQ,10,€40 today,€55 in 62 days,€40 today,now,4657,3638905,1
+27,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3036,3641948,1
+27,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2684,3644638,1
+27,MCQ,13,€34 today,€35 in 186 days,€34 today,now,6265,3650908,1
+27,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3763,3654685,1
+27,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3188,3657881,1
+27,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3199,3661089,1
+27,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2605,3663699,1
+27,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2885,3680330,1
+27,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3376,3683718,1
+27,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,10864,3674572,1
+27,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2861,3677440,1
+27,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2639,3686364,1
+27,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2718,3689088,1
+27,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2717,3691812,1
+27,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2780,3694596,1
+27,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2758,3697361,1
+27,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2420,3699793,1
+28,MCQ,1,€54 today,€55 in 117 days,€54 today,now,8463,3497662,1
+28,MCQ,2,€55 today,€75 in 61 days,€55 today,now,5052,3502717,1
+28,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4014,3506734,1
+28,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3777,3510514,1
+28,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,6002,3516517,1
+28,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4342,3520862,1
+28,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3285,3524150,1
+28,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2722,3526875,1
+28,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3090,3529967,1
+28,MCQ,10,€40 today,€55 in 62 days,€40 today,now,3367,3533337,1
+28,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3067,3536406,1
+28,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2819,3539228,1
+28,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3168,3542399,1
+28,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2811,3545212,1
+28,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3130,3548344,1
+28,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3927,3552274,1
+28,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2769,3555045,1
+28,MCQ,18,€24 today,€35 in 29 days,€24 today,now,4602,3559649,1
+28,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2891,3562543,1
+28,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2810,3565356,1
+28,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2999,3568357,1
+28,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3006,3571364,1
+28,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2870,3574237,1
+28,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2943,3577183,1
+28,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2974,3580159,1
+28,MCQ,26,€22 today,€25 in 136 days,€22 today,now,4397,3584558,1
+28,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3304,3587866,1
+29,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6806,3279544,1
+29,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,4028,3283583,1
+29,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,2745,3286334,1
+29,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2201,3288541,1
+29,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2763,3291310,1
+29,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4185,3295502,1
+29,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2082,3297590,1
+29,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2218,3299814,1
+29,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3946,3303765,1
+29,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2267,3306037,1
+29,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2364,3308407,1
+29,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3082,3311500,1
+29,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2639,3314144,1
+29,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2203,3316354,1
+29,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,4192,3320551,1
+29,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3701,3324258,1
+29,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1934,3326199,1
+29,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2033,3328237,1
+29,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2010,3330254,1
+29,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2810,3333071,1
+29,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2989,3336069,1
+29,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2981,3339059,1
+29,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1801,3340864,1
+29,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2345,3343217,1
+29,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1931,3345153,1
+29,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1993,3347153,1
+29,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2608,3349768,1
+30,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5554,3510410,1
+30,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6492,3516904,1
+30,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4571,3521479,1
+30,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2927,3524411,1
+30,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3377,3527791,1
+30,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2829,3530622,1
+30,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2001,3532626,1
+30,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1659,3534289,1
+30,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3754,3538046,1
+30,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2817,3540867,1
+30,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3354,3544225,1
+30,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3679,3547909,1
+30,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2299,3550212,1
+30,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2158,3552373,1
+30,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2404,3554780,1
+30,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3413,3558197,1
+30,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2346,3560548,1
+30,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,3759,3564310,1
+30,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3597,3567912,1
+30,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1843,3569759,1
+30,MCQ,21,€34 today,€50 in 30 days,€34 today,now,2266,3572029,1
+30,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2795,3574827,1
+30,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1898,3576728,1
+30,MCQ,24,€54 today,€60 in 111 days,€54 today,now,1858,3578590,1
+30,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2302,3580896,1
+30,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1616,3582516,1
+30,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1416,3583936,1
+31,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5381,3304802,1
+31,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,2602,3307416,1
+31,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,2585,3310008,1
+31,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,1935,3311950,1
+31,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2047,3314005,1
+31,MCQ,6,€47 today,€50 in 160 days,€50 in 160 days,wait,5014,3319026,1
+31,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,1542,3320580,1
+31,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2668,3323258,1
+31,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,4366,3327630,1
+31,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,1428,3329101,1
+31,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1663,3330772,1
+31,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,2011,3332793,1
+31,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3069,3335871,1
+31,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1812,3337721,1
+31,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2104,3339865,1
+31,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,1647,3341519,1
+31,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,2476,3344001,1
+31,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1880,3345887,1
+31,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1704,3347597,1
+31,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3722,3351325,1
+31,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2218,3353549,1
+31,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,3457,3357013,1
+31,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1246,3358265,1
+31,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,2192,3360463,1
+31,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1880,3362349,1
+31,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2416,3364771,1
+31,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1873,3366651,1
+32,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6604,3745953,1
+32,MCQ,2,€55 today,€75 in 61 days,€55 today,now,16171,3762127,1
+32,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4273,3766403,1
+32,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3678,3770083,1
+32,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,6347,3776432,1
+32,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3457,3779892,1
+32,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3567,3783461,1
+32,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2330,3785793,1
+32,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3028,3788823,1
+32,MCQ,10,€40 today,€55 in 62 days,€40 today,now,6121,3794947,1
+32,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2930,3797880,1
+32,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3112,3800998,1
+32,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3163,3804163,1
+32,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3845,3808011,1
+32,MCQ,15,€69 today,€85 in 91 days,€69 today,now,7810,3815823,1
+32,MCQ,16,€49 today,€60 in 89 days,€49 today,now,5432,3821258,1
+32,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2806,3824066,1
+32,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,5765,3829833,1
+32,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2449,3832284,1
+32,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3654,3835941,1
+32,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3210,3839153,1
+32,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3013,3842168,1
+32,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2592,3844762,1
+32,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3013,3847776,1
+32,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,3018,3850797,1
+32,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3361,3854161,1
+32,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3322,3857485,1
+33,MCQ,1,€54 today,€55 in 117 days,€54 today,now,4892,3447493,1
+33,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,7392,3454892,1
+33,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3872,3458770,1
+33,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2835,3461610,1
+33,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3119,3464734,1
+33,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2851,3467591,1
+33,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,4246,3471843,1
+33,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2225,3474074,1
+33,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3304,3477384,1
+33,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2663,3480053,1
+33,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1918,3481977,1
+33,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2599,3484581,1
+33,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2429,3487015,1
+33,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2234,3489255,1
+33,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,3354,3492613,1
+33,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2940,3495559,1
+33,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2380,3497944,1
+33,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1844,3499794,1
+33,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2064,3501862,1
+33,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2379,3504247,1
+33,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2624,3506877,1
+33,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2664,3509546,1
+33,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1747,3511299,1
+33,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2721,3514025,1
+33,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2883,3516914,1
+33,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3151,3520070,1
+33,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1837,3521912,1
+34,MCQ,1,€54 today,€55 in 117 days,€54 today,now,7688,3399829,1
+34,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,4712,3404545,1
+34,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,3576,3408125,1
+34,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2916,3411045,1
+34,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3879,3414928,1
+34,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4194,3419126,1
+34,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2581,3421711,1
+34,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2728,3424442,1
+34,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3846,3428292,1
+34,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2450,3430745,1
+34,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2360,3433109,1
+34,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,2404,3435516,1
+34,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2862,3438381,1
+34,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2359,3440744,1
+34,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2311,3443058,1
+34,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2865,3445926,1
+34,MCQ,17,€80 today,€85 in 157 days,€80 today,now,4629,3450558,1
+34,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2784,3453347,1
+34,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2264,3455614,1
+34,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3657,3459275,1
+34,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2213,3461492,1
+34,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,3614,3465109,1
+34,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2461,3467574,1
+34,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,1880,3469458,1
+34,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2829,3472291,1
+34,MCQ,26,€22 today,€25 in 136 days,€22 today,now,6665,3478960,1
+34,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2361,3481325,1
+35,MCQ,1,€54 today,€55 in 117 days,€54 today,now,10219,3979333,1
+35,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,5327,3984667,1
+35,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,7470,3992144,1
+35,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2731,3994880,1
+35,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3033,3997918,1
+35,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4209,4002133,1
+35,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2346,4004485,1
+35,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1996,4006486,1
+35,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4716,4011206,1
+35,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,3653,4014865,1
+35,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2094,4016964,1
+35,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3360,4020329,1
+35,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3050,4023384,1
+35,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2870,4026258,1
+35,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2510,4028774,1
+35,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2584,4031363,1
+35,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2853,4034221,1
+35,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,3318,4037545,1
+35,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2125,4039676,1
+35,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2715,4042396,1
+35,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2354,4044756,1
+35,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3286,4048047,1
+35,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,3972,4052024,1
+35,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3025,4055054,1
+35,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2641,4057700,1
+35,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2527,4060232,1
+35,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1865,4062102,1
+36,MCQ,1,€54 today,€55 in 117 days,€54 today,now,10425,4569375,1
+36,MCQ,2,€55 today,€75 in 61 days,€55 today,now,11217,4580597,1
+36,MCQ,3,€19 today,€25 in 53 days,€19 today,now,9271,4589873,1
+36,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4789,4594667,1
+36,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3776,4603977,1
+36,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3424,4607406,1
+36,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5525,4600197,1
+36,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3309,4610720,1
+36,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4475,4615199,1
+36,MCQ,10,€40 today,€55 in 62 days,€40 today,now,4242,4619447,1
+36,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2843,4622295,1
+36,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4307,4626606,1
+36,MCQ,13,€34 today,€35 in 186 days,€34 today,now,5925,4632536,1
+36,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3657,4636197,1
+36,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3675,4644291,1
+36,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3411,4647706,1
+36,MCQ,15,€69 today,€85 in 91 days,€69 today,now,4410,4640611,1
+36,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3493,4659029,1
+36,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,7821,4655531,1
+36,MCQ,20,€28 today,€30 in 179 days,€28 today,now,5461,4664494,1
+36,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3834,4668335,1
+36,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3204,4686036,1
+36,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3277,4689318,1
+37,MCQ,1,€54 today,€55 in 117 days,€54 today,now,12285,3450002,1
+37,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6223,3456229,1
+37,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4147,3460378,1
+37,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2757,3463137,1
+37,MCQ,5,€14 today,€25 in 19 days,€14 today,now,3264,3466404,1
+37,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2439,3468846,1
+37,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2853,3471701,1
+37,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1912,3473615,1
+37,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2359,3475977,1
+37,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2362,3478342,1
+37,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2769,3481115,1
+37,MCQ,12,€67 today,€75 in 119 days,€67 today,now,6320,3487438,1
+37,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2063,3489503,1
+37,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2450,3491956,1
+37,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2754,3494712,1
+37,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2486,3497201,1
+37,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2476,3499679,1
+37,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3396,3503078,1
+37,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3858,3506938,1
+37,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2600,3509540,1
+37,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1906,3511448,1
+37,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2391,3513841,1
+37,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2999,3516842,1
+37,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2423,3519267,1
+37,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2035,3521304,1
+37,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1975,3523282,1
+37,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2138,3525423,1
+38,MCQ,1,€54 today,€55 in 117 days,€55 in 117 days,wait,16701,3248398,1
+38,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,5706,3254110,1
+38,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4875,3258991,1
+38,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2790,3261786,1
+38,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3295,3265087,1
+38,MCQ,6,€47 today,€50 in 160 days,€50 in 160 days,wait,3507,3268598,1
+38,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2520,3271125,1
+38,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1935,3273065,1
+38,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,2692,3275762,1
+38,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2821,3278589,1
+38,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3993,3282588,1
+38,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,3858,3286451,1
+38,MCQ,13,€34 today,€35 in 186 days,€34 today,now,9039,3295497,1
+38,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2634,3298137,1
+38,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,1836,3299979,1
+38,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2839,3302823,1
+38,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,2146,3304975,1
+38,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1910,3306890,1
+38,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1820,3308715,1
+38,MCQ,20,€28 today,€30 in 179 days,€30 in 179 days,wait,1633,3310353,1
+38,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1861,3312219,1
+38,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,1927,3314151,1
+38,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2537,3316693,1
+38,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,1869,3318568,1
+38,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2627,3321200,1
+38,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,2211,3323417,1
+38,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2057,3325479,1
+4,MCQ,1,€54 today,€55 in 117 days,€55 in 117 days,wait,11105,3252880,1
+4,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,4012,3256895,1
+4,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4742,3261639,1
+4,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2718,3264359,1
+4,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2638,3266998,1
+4,MCQ,6,€47 today,€50 in 160 days,€50 in 160 days,wait,3643,3270643,1
+4,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2605,3273251,1
+4,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2231,3275483,1
+4,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,2930,3278415,1
+4,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2286,3280703,1
+4,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1947,3282651,1
+4,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,1653,3284306,1
+4,MCQ,13,€34 today,€35 in 186 days,€35 in 186 days,wait,1667,3285975,1
+4,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1618,3287595,1
+4,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,1490,3289087,1
+4,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,1702,3290791,1
+4,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,1478,3292271,1
+4,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1606,3293878,1
+4,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1312,3295192,1
+4,MCQ,20,€28 today,€30 in 179 days,€30 in 179 days,wait,1453,3296647,1
+4,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1394,3298043,1
+4,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,1678,3299723,1
+4,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1226,3300951,1
+4,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,1791,3302743,1
+4,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1905,3304651,1
+4,MCQ,26,€22 today,€25 in 136 days,€25 in 136 days,wait,1298,3305951,1
+4,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1579,3307531,1
+40,MCQ,1,€54 today,€55 in 117 days,€54 today,now,8500,3523438,1
+40,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3714,3527157,1
+40,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,5964,3533126,1
+40,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,6543,3539674,1
+40,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5374,3545051,1
+40,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3324,3548378,1
+40,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3446,3551826,1
+40,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2217,3554047,1
+40,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4079,3558129,1
+40,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,7195,3565325,1
+40,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3166,3568495,1
+40,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3869,3572367,1
+40,MCQ,13,€34 today,€35 in 186 days,€34 today,now,4476,3576845,1
+40,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,4004,3580851,1
+40,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,4688,3585542,1
+40,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,7272,3592817,1
+40,MCQ,17,€80 today,€85 in 157 days,€80 today,now,4916,3597737,1
+40,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,5478,3603220,1
+40,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,4216,3607440,1
+40,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3975,3611417,1
+40,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2212,3613633,1
+40,MCQ,22,€25 today,€30 in 80 days,€25 today,now,6318,3619954,1
+40,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2414,3622370,1
+40,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3690,3626064,1
+40,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2790,3628856,1
+40,MCQ,26,€22 today,€25 in 136 days,€22 today,now,5227,3634086,1
+40,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3225,3637314,1
+41,MCQ,1,€54 today,€55 in 117 days,€54 today,now,11204,3307429,1
+41,MCQ,2,€55 today,€75 in 61 days,€55 today,now,4893,3312336,1
+41,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3788,3316144,1
+41,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3250,3319414,1
+41,MCQ,5,€14 today,€25 in 19 days,€14 today,now,3655,3323092,1
+41,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3622,3326738,1
+41,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,7382,3334137,1
+41,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3067,3337224,1
+41,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3073,3340315,1
+41,MCQ,10,€40 today,€55 in 62 days,€40 today,now,3286,3343622,1
+41,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,4370,3348011,1
+41,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3901,3351930,1
+41,MCQ,13,€34 today,€35 in 186 days,€34 today,now,4055,3356004,1
+41,MCQ,14,€27 today,€50 in 21 days,€27 today,now,3019,3359044,1
+41,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2948,3362013,1
+41,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3012,3365050,1
+41,MCQ,17,€80 today,€85 in 157 days,€80 today,now,6221,3371292,1
+41,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3215,3374529,1
+41,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,4491,3379039,1
+41,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2414,3381472,1
+41,MCQ,21,€34 today,€50 in 30 days,€34 today,now,3110,3384601,1
+41,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2664,3387282,1
+41,MCQ,23,€41 today,€75 in 20 days,€41 today,now,2394,3389693,1
+41,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2316,3392029,1
+41,MCQ,25,€54 today,€80 in 30 days,€54 today,now,2429,3394478,1
+41,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2069,3396566,1
+41,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3078,3399663,1
+42,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5269,3400724,1
+42,MCQ,2,€55 today,€75 in 61 days,€55 today,now,6473,3407204,1
+42,MCQ,3,€19 today,€25 in 53 days,€19 today,now,2876,3410084,1
+42,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2283,3412371,1
+42,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4614,3416988,1
+42,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2417,3419413,1
+42,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3092,3422511,1
+42,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2037,3424553,1
+42,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2066,3426623,1
+42,MCQ,10,€40 today,€55 in 62 days,€40 today,now,5904,3432534,1
+42,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3387,3435925,1
+42,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2706,3438635,1
+42,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2876,3441515,1
+42,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,5431,3446949,1
+42,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2636,3449589,1
+42,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2285,3451878,1
+42,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1807,3453690,1
+42,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2290,3455983,1
+42,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3239,3459226,1
+42,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2243,3461472,1
+42,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,4176,3465652,1
+42,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1903,3467560,1
+42,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,3046,3470611,1
+42,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2602,3473218,1
+42,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2284,3475506,1
+42,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3128,3478638,1
+42,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2018,3480660,1
+43,MCQ,1,€54 today,€55 in 117 days,€54 today,now,9014,3625249,1
+43,MCQ,3,€19 today,€25 in 53 days,€19 today,now,5016,3641571,1
+43,MCQ,2,€55 today,€75 in 61 days,€55 today,now,11300,3636553,1
+43,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3262,3644835,1
+43,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5486,3650323,1
+43,MCQ,6,€47 today,€50 in 160 days,€47 today,now,5470,3655795,1
+43,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3315,3659113,1
+43,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,4300,3663415,1
+43,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4682,3668099,1
+43,MCQ,10,€40 today,€55 in 62 days,€40 today,now,5715,3673817,1
+43,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3638,3677457,1
+43,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4778,3682238,1
+43,MCQ,13,€34 today,€35 in 186 days,€34 today,now,6941,3689181,1
+43,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,6788,3695971,1
+43,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2784,3698757,1
+43,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3263,3702022,1
+43,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3933,3705957,1
+43,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,4088,3710047,1
+43,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,5208,3715257,1
+43,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3338,3718597,1
+43,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,7112,3725712,1
+43,MCQ,22,€25 today,€30 in 80 days,€25 today,now,4582,3730295,1
+43,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,6095,3736392,1
+43,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2597,3738992,1
+43,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,3744,3742738,1
+43,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2746,3745486,1
+43,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2490,3747978,1
+44,MCQ,1,€54 today,€55 in 117 days,€54 today,now,8968,3228121,1
+44,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6117,3234241,1
+44,MCQ,3,€19 today,€25 in 53 days,€19 today,now,5712,3239955,1
+44,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3098,3243055,1
+44,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4797,3247855,1
+44,MCQ,6,€47 today,€50 in 160 days,€47 today,now,4659,3252517,1
+44,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3464,3255985,1
+44,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2434,3258421,1
+44,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4040,3262464,1
+44,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,4621,3267087,1
+44,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2883,3269973,1
+44,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3414,3273390,1
+44,MCQ,13,€34 today,€35 in 186 days,€34 today,now,4600,3277992,1
+44,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3958,3281952,1
+44,MCQ,15,€69 today,€85 in 91 days,€69 today,now,6624,3288579,1
+44,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2639,3291221,1
+44,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3643,3294866,1
+44,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2816,3297685,1
+44,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,4673,3302361,1
+44,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3051,3305416,1
+44,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,3981,3309399,1
+44,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3318,3312720,1
+44,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2530,3315252,1
+44,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2612,3317867,1
+44,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,3244,3321113,1
+44,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2802,3323917,1
+44,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3274,3327195,1
+45,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6953,3873867,1
+45,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,5785,3879685,1
+45,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4389,3884079,1
+45,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4517,3888603,1
+45,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3852,3892460,1
+45,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3004,3895470,1
+45,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2710,3898188,1
+45,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2157,3900354,1
+45,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3588,3903947,1
+45,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2421,3906373,1
+45,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1987,3908364,1
+45,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,3217,3911587,1
+45,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2232,3913826,1
+45,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2229,3916058,1
+45,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,3407,3919469,1
+45,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3273,3922747,1
+45,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2253,3925003,1
+45,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2015,3927022,1
+45,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1818,3928844,1
+45,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3823,3932672,1
+45,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2874,3935550,1
+45,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,4947,3940506,1
+45,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1948,3942478,1
+45,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2657,3945139,1
+45,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2803,3947955,1
+45,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2265,3950255,1
+45,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1766,3952025,1
+46,MCQ,1,€54 today,€55 in 117 days,€54 today,now,11022,3665593,1
+46,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,10241,3675836,1
+46,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,7535,3683373,1
+46,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3111,3686485,1
+46,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,8347,3694834,1
+46,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3816,3698652,1
+46,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,5365,3704018,1
+46,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,4016,3708036,1
+46,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3843,3711881,1
+46,MCQ,10,€40 today,€55 in 62 days,€40 today,now,3707,3715590,1
+46,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3621,3719216,1
+46,MCQ,12,€67 today,€75 in 119 days,€67 today,now,5474,3724692,1
+46,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3252,3727945,1
+46,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,4827,3732774,1
+46,MCQ,15,€69 today,€85 in 91 days,€69 today,now,4224,3737000,1
+46,MCQ,16,€49 today,€60 in 89 days,€49 today,now,10591,3747593,1
+46,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3362,3750957,1
+46,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3884,3754842,1
+46,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2769,3757612,1
+46,MCQ,20,€28 today,€30 in 179 days,€28 today,now,5550,3763164,1
+46,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,8520,3771686,1
+46,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3667,3775355,1
+46,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,3737,3779093,1
+46,MCQ,24,€54 today,€60 in 111 days,€54 today,now,6883,3785978,1
+46,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,4478,3790458,1
+46,MCQ,26,€22 today,€25 in 136 days,€22 today,now,13616,3804075,1
+46,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3996,3808073,1
+47,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5092,3235367,1
+47,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,5177,3240550,1
+47,MCQ,3,€19 today,€25 in 53 days,€19 today,now,5281,3245835,1
+47,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4296,3250135,1
+47,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4645,3254783,1
+47,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3896,3258683,1
+47,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,4177,3262864,1
+47,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,3147,3266014,1
+47,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3312,3269330,1
+47,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,4732,3274065,1
+47,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2944,3277013,1
+47,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3366,3280383,1
+47,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3389,3283776,1
+47,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2633,3286411,1
+47,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2896,3289311,1
+47,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,2913,3292227,1
+47,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2908,3295138,1
+47,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2668,3297810,1
+47,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2777,3300590,1
+47,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2746,3303341,1
+47,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2747,3306091,1
+47,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2980,3309074,1
+47,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2579,3311656,1
+47,MCQ,24,€54 today,€60 in 111 days,€54 today,now,4316,3315976,1
+47,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2892,3318871,1
+47,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3912,3322787,1
+47,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2385,3325175,1
+48,MCQ,1,€54 today,€55 in 117 days,€54 today,now,4234,4405682,1
+48,MCQ,2,€55 today,€75 in 61 days,€55 today,now,3514,4409204,1
+48,MCQ,3,€19 today,€25 in 53 days,€19 today,now,2802,4412010,1
+48,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3711,4415723,1
+48,MCQ,5,€14 today,€25 in 19 days,€14 today,now,3854,4419583,1
+48,MCQ,6,€47 today,€50 in 160 days,€47 today,now,12329,4431917,1
+48,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2699,4434621,1
+48,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2858,4437485,1
+48,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3612,4441101,1
+48,MCQ,10,€40 today,€55 in 62 days,€40 today,now,6011,4447116,1
+48,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3293,4450412,1
+48,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2283,4452699,1
+48,MCQ,13,€34 today,€35 in 186 days,€34 today,now,5883,4458586,1
+48,MCQ,14,€27 today,€50 in 21 days,€27 today,now,2170,4460761,1
+48,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3387,4464153,1
+48,MCQ,16,€49 today,€60 in 89 days,€49 today,now,1791,4465951,1
+48,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1711,4467668,1
+48,MCQ,18,€24 today,€35 in 29 days,€24 today,now,1703,4469375,1
+48,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2104,4471485,1
+48,MCQ,20,€28 today,€30 in 179 days,€28 today,now,3962,4475451,1
+48,MCQ,21,€34 today,€50 in 30 days,€34 today,now,2482,4477939,1
+48,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2186,4480131,1
+48,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2524,4482659,1
+48,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2302,4484967,1
+48,MCQ,25,€54 today,€80 in 30 days,€54 today,now,4758,4489729,1
+48,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2321,4492055,1
+48,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2579,4494639,1
+49,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6324,6125438,1
+49,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,9316,6134759,1
+49,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3081,6137845,1
+49,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2562,6140410,1
+49,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4589,6145003,1
+49,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2778,6147786,1
+49,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3517,6151308,1
+49,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1936,6153249,1
+49,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2495,6155748,1
+49,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2751,6158503,1
+49,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1869,6160376,1
+49,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2013,6162393,1
+49,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3057,6165454,1
+49,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3303,6168762,1
+49,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2022,6170788,1
+49,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2109,6172902,1
+49,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1889,6174795,1
+49,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2662,6177462,1
+49,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3433,6180899,1
+49,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1873,6182776,1
+49,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2029,6184809,1
+49,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1693,6186506,1
+49,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1940,6188451,1
+49,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2575,6191030,1
+49,MCQ,25,€54 today,€80 in 30 days,€54 today,now,1897,6192931,1
+49,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1837,6194772,1
+49,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,3442,6198217,1
+5,MCQ,1,€54 today,€55 in 117 days,€54 today,now,9372,3313190,1
+5,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,13057,3326254,1
+5,MCQ,3,€19 today,€25 in 53 days,€19 today,now,10226,3336486,1
+5,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4366,3340859,1
+5,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,4429,3345294,1
+5,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3473,3348774,1
+5,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,4991,3353772,1
+5,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2569,3356348,1
+5,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,4429,3360783,1
+5,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,5214,3366004,1
+5,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2056,3368066,1
+5,MCQ,12,€67 today,€75 in 119 days,€67 today,now,3555,3371628,1
+5,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2402,3374036,1
+5,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3564,3377606,1
+5,MCQ,15,€69 today,€85 in 91 days,€69 today,now,3664,3381276,1
+5,MCQ,16,€49 today,€60 in 89 days,€49 today,now,3779,3385062,1
+5,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2398,3387466,1
+5,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2864,3390336,1
+5,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2659,3393002,1
+5,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2426,3395434,1
+5,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,2448,3397888,1
+5,MCQ,22,€25 today,€30 in 80 days,€25 today,now,3744,3401638,1
+5,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1961,3403604,1
+5,MCQ,24,€54 today,€60 in 111 days,€54 today,now,4756,3408366,1
+5,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1794,3410166,1
+5,MCQ,26,€22 today,€25 in 136 days,€22 today,now,3955,3414126,1
+5,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2380,3416512,1
+50,MCQ,1,€54 today,€55 in 117 days,€54 today,now,8435,3653615,1
+50,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,4328,3657945,1
+50,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,3019,3660966,1
+50,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2236,3663203,1
+50,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2232,3665436,1
+50,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2721,3668159,1
+50,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,1695,3669855,1
+50,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,1720,3671576,1
+50,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3035,3674612,1
+50,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,1662,3676275,1
+50,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1544,3677821,1
+50,MCQ,12,€67 today,€75 in 119 days,€67 today,now,4983,3682805,1
+50,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2232,3685039,1
+50,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,1738,3686778,1
+50,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,1840,3688620,1
+50,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3590,3692212,1
+50,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1945,3694159,1
+50,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2331,3696491,1
+50,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1430,3697921,1
+50,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2107,3700032,1
+50,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1487,3701520,1
+50,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2233,3703754,1
+50,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1344,3705099,1
+50,MCQ,24,€54 today,€60 in 111 days,€54 today,now,1912,3707012,1
+50,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1359,3708372,1
+50,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1632,3710005,1
+50,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1207,3711213,1
+51,MCQ,1,€54 today,€55 in 117 days,€54 today,now,6350,3543732,1
+51,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,13367,3557104,1
+51,MCQ,3,€19 today,€25 in 53 days,€19 today,now,5043,3562152,1
+51,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3423,3565580,1
+51,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5711,3571296,1
+51,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3476,3574776,1
+51,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2250,3577031,1
+51,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2374,3579409,1
+51,MCQ,9,€78 today,€80 in 14 days,€78 today,now,2815,3582229,1
+51,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2334,3584568,1
+51,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2657,3587231,1
+51,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2764,3590000,1
+51,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2545,3592549,1
+51,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2372,3594925,1
+51,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2930,3597859,1
+51,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2499,3600363,1
+51,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2193,3602561,1
+51,MCQ,18,€24 today,€35 in 29 days,€24 today,now,3152,3605718,1
+51,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1882,3607604,1
+51,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2325,3609933,1
+51,MCQ,21,€34 today,€50 in 30 days,€34 today,now,2440,3612378,1
+51,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1630,3614013,1
+51,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1865,3615882,1
+51,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3189,3619075,1
+51,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,4202,3623282,1
+51,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1984,3625270,1
+51,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2936,3628210,1
+6,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5750,4306395,1
+6,MCQ,2,€55 today,€75 in 61 days,€55 today,now,7200,4313683,1
+6,MCQ,3,€19 today,€25 in 53 days,€19 today,now,4021,4317710,1
+6,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,2850,4320565,1
+6,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3324,4323894,1
+6,MCQ,6,€47 today,€50 in 160 days,€47 today,now,2902,4326801,1
+6,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,6599,4333406,1
+6,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2126,4335538,1
+6,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3167,4338710,1
+6,MCQ,10,€40 today,€55 in 62 days,€40 today,now,2572,4341288,1
+6,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3017,4344310,1
+6,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2525,4346841,1
+6,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3077,4349923,1
+6,MCQ,14,€27 today,€50 in 21 days,€27 today,now,11671,4361599,1
+6,MCQ,15,€69 today,€85 in 91 days,€69 today,now,1922,4363526,1
+6,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2632,4366162,1
+6,MCQ,17,€80 today,€85 in 157 days,€80 today,now,1842,4368011,1
+6,MCQ,18,€24 today,€35 in 29 days,€24 today,now,2563,4370579,1
+6,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2169,4372753,1
+6,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2597,4375354,1
+6,MCQ,21,€34 today,€50 in 30 days,€34 today,now,5011,4380370,1
+6,MCQ,22,€25 today,€30 in 80 days,€25 today,now,2949,4383324,1
+6,MCQ,23,€41 today,€75 in 20 days,€41 today,now,2000,4385329,1
+6,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2357,4387691,1
+6,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2799,4390496,1
+6,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2118,4392619,1
+6,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,4046,4396669,1
+7,MCQ,1,€54 today,€55 in 117 days,€54 today,now,9695,3966110,1
+7,MCQ,2,€55 today,€75 in 61 days,€55 today,now,4863,3970979,1
+7,MCQ,3,€19 today,€25 in 53 days,€19 today,now,3796,3974779,1
+7,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,5390,3980174,1
+7,MCQ,5,€14 today,€25 in 19 days,€14 today,now,5949,3986127,1
+7,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3841,3989973,1
+7,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3681,3993659,1
+7,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,4052,3997715,1
+7,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4563,4002282,1
+7,MCQ,10,€40 today,€55 in 62 days,€40 today,now,3334,4005621,1
+7,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3110,4008735,1
+7,MCQ,12,€67 today,€75 in 119 days,€67 today,now,2594,4011333,1
+7,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2229,4013567,1
+7,MCQ,14,€27 today,€50 in 21 days,€27 today,now,2791,4016363,1
+7,MCQ,15,€69 today,€85 in 91 days,€69 today,now,2615,4018983,1
+7,MCQ,16,€49 today,€60 in 89 days,€49 today,now,2683,4021671,1
+7,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2045,4023720,1
+7,MCQ,18,€24 today,€35 in 29 days,€24 today,now,1725,4025450,1
+7,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,3014,4028468,1
+7,MCQ,20,€28 today,€30 in 179 days,€28 today,now,2233,4030705,1
+7,MCQ,21,€34 today,€50 in 30 days,€34 today,now,2580,4033290,1
+7,MCQ,22,€25 today,€30 in 80 days,€25 today,now,1581,4034876,1
+7,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2187,4037066,1
+7,MCQ,24,€54 today,€60 in 111 days,€54 today,now,2037,4039106,1
+7,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2562,4041673,1
+7,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1946,4043622,1
+7,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2381,4046006,1
+8,MCQ,1,€54 today,€55 in 117 days,€54 today,now,62906,5200969,2
+8,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,6413,5207386,2
+8,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,4724,5212113,2
+8,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,4241,5216356,2
+8,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,3884,5220243,2
+8,MCQ,6,€47 today,€50 in 160 days,€47 today,now,5416,5225664,2
+8,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3414,5229081,2
+8,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,5147,5234231,2
+8,MCQ,9,€78 today,€80 in 14 days,€78 today,now,4468,5238703,2
+8,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,6293,5244999,2
+8,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,3978,5248981,2
+8,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,9015,5257998,2
+8,MCQ,13,€34 today,€35 in 186 days,€34 today,now,20048,5278050,2
+8,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,3209,5281261,2
+8,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,3433,5284697,2
+8,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,4880,5289580,2
+8,MCQ,17,€80 today,€85 in 157 days,€85 in 157 days,wait,6041,5295624,2
+8,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,6017,5301644,2
+8,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2776,5304423,2
+8,MCQ,20,€28 today,€30 in 179 days,€28 today,now,8307,5312733,2
+8,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,5731,5318467,2
+8,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,8884,5327353,2
+8,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,4873,5332228,2
+8,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,15623,5347854,2
+8,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,4863,5352720,2
+8,MCQ,26,€22 today,€25 in 136 days,€22 today,now,5260,5357983,2
+8,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,5297,5363283,2
+9,MCQ,1,€54 today,€55 in 117 days,€55 in 117 days,wait,9630,3251764,1
+9,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,7063,3258840,1
+9,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,6058,3264903,1
+9,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3073,3267981,1
+9,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,5996,3273980,1
+9,MCQ,6,€47 today,€50 in 160 days,€47 today,now,5578,3279562,1
+9,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,3883,3283454,1
+9,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2264,3285726,1
+9,MCQ,9,€78 today,€80 in 14 days,€80 in 14 days,wait,3651,3289382,1
+9,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,6678,3296064,1
+9,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,2692,3298766,1
+9,MCQ,12,€67 today,€75 in 119 days,€67 today,now,6068,3304840,1
+9,MCQ,13,€34 today,€35 in 186 days,€34 today,now,3336,3308180,1
+9,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2635,3310828,1
+9,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2452,3313284,1
+9,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,3170,3316467,1
+9,MCQ,17,€80 today,€85 in 157 days,€80 today,now,3496,3319974,1
+9,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,2305,3322287,1
+9,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,2245,3324537,1
+9,MCQ,20,€28 today,€30 in 179 days,€30 in 179 days,wait,2936,3327477,1
+9,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,10770,3338255,1
+9,MCQ,22,€25 today,€30 in 80 days,€30 in 80 days,wait,4495,3342759,1
+9,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,2297,3345063,1
+9,MCQ,24,€54 today,€60 in 111 days,€54 today,now,3720,3348787,1
+9,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,2843,3351638,1
+9,MCQ,26,€22 today,€25 in 136 days,€22 today,now,2969,3354615,1
+9,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,2082,3356701,1

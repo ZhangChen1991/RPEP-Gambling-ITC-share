@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Intertemporal choice task</title>
+     <script src="js/jspsych-6.2.0/jspsych.js"></script>
+     <script src="js/jspsych-6.2.0/plugins/jspsych-html-keyboard-response.js"></script>
+     <script src="js/jspsych-6.2.0/plugins/jspsych-image-keyboard-response.js"></script>
+     <link rel="stylesheet" href="configurations/custom.css">
+     <link rel="stylesheet" href="js/jspsych-6.2.0/css/jspsych.css">
+
+    </head>
+    <body></body>
+    <script>
+
+      /* create timeline */
+      var timeline = [];
+
+      /* define instruction message */
+      var instructions = {
+         type: "html-keyboard-response",
+         stimulus: "<p>You are almost at the end of the experiment!</p><p> In what follows you'll have to indicate how you felt when you <strong>won</strong> cents when you chose the right colour.</p><p> press any key to begin.</p>"
+      };
+
+      timeline.push(instructions);
+
+      /*define test stimulus */
+      var test_stimulus1 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you WON cents by choosing the right color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_1.png'></img>" 
+        };
+        timeline.push(test_stimulus1);
+
+        /*define test stimulus */
+        var test_stimulus2 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you WON cents by choosing the right color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_2.png'></img>"
+        };
+        timeline.push(test_stimulus2);
+
+        /*define test stimulus */
+        var test_stimulus3 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you WON cents by choosing the right color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_3.png'></img>"
+        };
+        timeline.push(test_stimulus3);
+
+        /* define instruction message */
+        var instructions2 = {
+         type: "html-keyboard-response",
+         stimulus: "<p>LAST PART!</p><p> In what follows you'll have to indicate how you felt when you lost cents when you chose the wrong colour.</p><p> press any key to begin.</p>"
+      };
+
+      timeline.push(instructions2);
+
+      /*define test stimulus */
+      var test_stimulus4 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you LOST cents by choosing the wrong color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_1.png'></img>" 
+        };
+        timeline.push(test_stimulus4);
+        
+        /*define test stimulus */
+        var test_stimulus5 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you LOST cents by choosing the wrong color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_2.png'></img>"
+        };
+        timeline.push(test_stimulus5);
+
+        /*define test stimulus */
+        var test_stimulus6 = {
+          type: "html-keyboard-response",
+          stimulus: "<p> Choose the picture that reflected best how you felt when you LOST cents by choosing the wrong color.</p>" +
+          "<div style='float: center;'><img src='images/SAM_3.png'></img>"
+        };
+        timeline.push(test_stimulus6);
+
+      /* start the experiment */
+      jsPsych.init({
+         timeline: timeline,
+         on_finish: function() {
+               jsPsych.data.displayData();
+            }
+        });
+    </script>
+</html>

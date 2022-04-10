@@ -1,0 +1,7 @@
+subjectID,task,outcome,question,resp,rt
+49,SAM,win,valence,f,15085
+49,SAM,win,arousal,g,11788
+49,SAM,win,control,h,10331
+49,SAM,loss,valence,h,5533
+49,SAM,loss,arousal,h,9043
+49,SAM,loss,control,f,5968

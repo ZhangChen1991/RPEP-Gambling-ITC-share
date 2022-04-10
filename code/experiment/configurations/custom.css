@@ -1,0 +1,267 @@
+/* Custom css code for the appearance of the task */
+
+
+/* define some global variables
+To define a global variable, add two hypens (-) to its name.
+The variable can be used later on by using the var() expression.
+*/
+
+:root {
+
+  /***************************************************
+        The overall game area
+  ***************************************************/
+
+  /* the overall size of the game area */
+  --overall-width: 1000px;
+  --overall-height: 600px;
+
+  /* the div showing the message in the center */
+  --message-width: var(--overall-width);
+  --message-height: 40px;
+  --message-pos-top: calc((var(--overall-height) - var(--message-height))/2);
+
+  /* the size of the div showing the current balance */
+  --balance-width: var(--overall-width);
+  --balance-height: 30px;
+  --balance-pos-left: calc((var(--overall-width) - var(--balance-width))/2);
+  --balance-pos-top: calc(var(--overall-height) - var(--balance-height));
+
+
+  /***************************************************
+        The guessing game
+  ***************************************************/
+
+
+
+  /***************************************************
+        The intertemporal choice game
+  ***************************************************/
+
+  /* the width and height of intertemporal choice options */
+  --IT-option-width: 300px;
+  --IT-option-height: 180px;
+  --IT-option-border: 5px;
+
+  /* the overall width and height, when borders are included */
+  --IT-option-width-overall: calc(var(--IT-option-width) + var(--IT-option-border)*2);
+  --IT-option-height-overall: calc(var(--IT-option-height) + var(--IT-option-border)*2);
+
+  /* determine the positions of the two options */
+  --IT-between-distance: 200px; /* the distance between two options */
+
+  --IT-pos-top: 180px;
+  --IT-pos-left: calc((var(--overall-width) - 2*var(--IT-option-width-overall) - var(--IT-between-distance))/2);
+  --IT-pos-right: calc(var(--IT-pos-left) + var(--IT-option-width-overall) + var(--IT-between-distance));
+
+  /* determine the positions of the F and J options */
+  --IT-F-J-pos-top: calc(var(--IT-pos-top) + var(--IT-option-height-overall) + 20px);
+
+
+}
+
+/**************************
+     Instructions
+**************************/
+.instruction {
+  width: var(--overall-width);
+}
+
+
+/**************************
+  The overall game area
+**************************/
+#game-area{
+  width: var(--overall-width);
+  height: var(--overall-height);
+  position: relative;
+}
+
+#message{
+  width: var(--message-width);
+  height: var(--message-height);
+  line-height: var(--message-height);
+  font-size: var(--message-height);
+  text-align: center;
+  position: absolute;
+  top: var(--message-pos-top);
+  left: var(--message-pos-left);
+}
+
+#balance{
+  width: var(--balance-width);
+  height: var(--balance-height);
+  line-height: var(--balance-height);
+  font-size: var(--balance-height);
+  text-align: center;
+  position: absolute;
+  top: var(--balance-pos-top);
+  left: var(--balance-pos-left);
+}
+
+
+/**************************
+  The guessing game
+**************************/
+
+/* the text instruction */
+
+#game1_instruction{
+  height:30px;
+  width:100%;
+  top:30px;
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* the outcome */
+
+#guess_outcome{
+  height:30px;
+  width:100%;
+  bottom:150px;
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.F_button {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  position: absolute;
+  top: 75%; left: 20%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+}
+
+.F_button img{
+  width: 100%;
+}
+
+.J_button {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 75%; left: 80%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+}
+
+.J_button img{
+  width: 100%;
+}
+
+/* Add border when an option is selected */
+.selected {
+  border: 4px solid #BADA55;
+  border-radius: 10px;
+}
+
+.unselected{
+  border: 4px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+/* flip card animation */
+/* code from https://3dtransforms.desandro.com/card-flip */
+
+/* The flip color container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-color {
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* This container is needed to position the front and back side */
+.flip-color-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* resize all images to fit the flip-card-inner container */
+.flip-color-inner img{
+  width: 100%;
+  height:100%;
+}
+
+/* Do an horizontal flip of a card */
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-color-front, .flip-color-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-color-back {
+  transform: rotateY(180deg);
+}
+
+
+/**************************
+  The choice game
+**************************/
+
+.IT-option {
+  /* text box size */
+  width: var(--IT-option-width);
+  height: var(--IT-option-height);
+  border: solid black var(--IT-option-border);
+  border-radius: 30px;
+  background-image: linear-gradient(#DAF7A6 0 50%, #CCCCFF 50% 100%);
+
+  /* font size, and center text both horizontally and vertically */
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: calc(var(--IT-option-height)/2);
+}
+
+/* the left option of the IT choice*/
+#IT-option-left{
+  position: absolute;
+  left: var(--IT-pos-left);
+  top: var(--IT-pos-top);
+}
+
+#IT-option-right{
+  position: absolute;
+  left: var(--IT-pos-right);
+  top: var(--IT-pos-top);
+}
+
+#IT-F-option{
+  width: var(--IT-option-width-overall);
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: var(--IT-pos-left);
+  top: var(--IT-F-J-pos-top);
+}
+
+#IT-J-option{
+  width: var(--IT-option-width-overall);
+  font-size: 45px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: var(--IT-pos-right);
+  top: var(--IT-F-J-pos-top);
+}

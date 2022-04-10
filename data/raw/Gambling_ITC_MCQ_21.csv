@@ -1,0 +1,28 @@
+subjectID,task,number,now,delayed,selected,choice,rt,time_elapsed
+21,MCQ,1,€54 today,€55 in 117 days,€54 today,now,5703,3329887
+21,MCQ,2,€55 today,€75 in 61 days,€75 in 61 days,wait,3653,3333543
+21,MCQ,3,€19 today,€25 in 53 days,€25 in 53 days,wait,3550,3337095
+21,MCQ,4,€31 today,€85 in 7 days,€85 in 7 days,wait,3814,3340911
+21,MCQ,5,€14 today,€25 in 19 days,€25 in 19 days,wait,2646,3343564
+21,MCQ,6,€47 today,€50 in 160 days,€47 today,now,3286,3346852
+21,MCQ,7,€15 today,€35 in 13 days,€35 in 13 days,wait,2574,3349428
+21,MCQ,8,€25 today,€60 in 14 days,€60 in 14 days,wait,2862,3352292
+21,MCQ,9,€78 today,€80 in 14 days,€78 today,now,3615,3355908
+21,MCQ,10,€40 today,€55 in 62 days,€55 in 62 days,wait,2430,3358340
+21,MCQ,11,€11 today,€30 in 7 days,€30 in 7 days,wait,1982,3360324
+21,MCQ,12,€67 today,€75 in 119 days,€75 in 119 days,wait,6311,3366636
+21,MCQ,13,€34 today,€35 in 186 days,€34 today,now,2719,3369356
+21,MCQ,14,€27 today,€50 in 21 days,€50 in 21 days,wait,2038,3371396
+21,MCQ,15,€69 today,€85 in 91 days,€85 in 91 days,wait,2095,3373492
+21,MCQ,16,€49 today,€60 in 89 days,€60 in 89 days,wait,1846,3375340
+21,MCQ,17,€80 today,€85 in 157 days,€80 today,now,2751,3378092
+21,MCQ,18,€24 today,€35 in 29 days,€35 in 29 days,wait,1783,3379876
+21,MCQ,19,€33 today,€80 in 14 days,€80 in 14 days,wait,1679,3381556
+21,MCQ,20,€28 today,€30 in 179 days,€28 today,now,1879,3383436
+21,MCQ,21,€34 today,€50 in 30 days,€50 in 30 days,wait,1726,3385164
+21,MCQ,22,€25 today,€30 in 80 days,€25 today,now,5015,3390180
+21,MCQ,23,€41 today,€75 in 20 days,€75 in 20 days,wait,1630,3391812
+21,MCQ,24,€54 today,€60 in 111 days,€60 in 111 days,wait,2383,3394196
+21,MCQ,25,€54 today,€80 in 30 days,€80 in 30 days,wait,1558,3395756
+21,MCQ,26,€22 today,€25 in 136 days,€22 today,now,1854,3397612
+21,MCQ,27,€20 today,€55 in 7 days,€55 in 7 days,wait,1654,3399268

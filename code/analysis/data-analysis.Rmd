@@ -1,0 +1,723 @@
+---
+title: "Wins and losses on intertemporal choices"
+author: 
+  - Zhang Chen^[Department of Experimental Psychology, Ghent University, Zhang.Chen@UGent.be]
+date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+output: 
+  html_document:
+    code_folding: hide
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.align = "center")
+```
+
+# Background
+
+This experiment examines the effects of prior outcomes (wins, losses, and non-gamble outcomes) on intertemporal choices. Participants alternated between a guessing game and an intertemporal choice trial. The guessing game consisted of two types of trials: (1) gamble trials, in which participants needed to guess whether the back side of a card was blue or yellow, by pressing either F or J. If they guessed correctly, they won 20 cents; if they guessed incorrectly, they lost 15 cents. (2) non-gamble trials, in which either a blue or a yellow card was shown. The task for the participants was to indicate the color of the card, again by pressing either F or J. They could not win or lose points on these non-gamble trials.
+
+After the guessing game, participants needed to press the space bar to continue to an intertemporal choice trial. They were presented with two options, an immediate option and a delay option. The delay option was always 20 cents, and participants needed to wait for either 5 or 10 seconds. When the delay duration was 5 seconds, the immediate amount varied from 1 to 16 cents; when the delay duration was 10 seconds, the immediate amount varied from 1 to 8 cents. If participants chose the immediate option, the corresponding amount was immediately shown; if participants chose the delayed option, they needed to wait till the delay duration had passed. When the reward appeared, participants needed to press K to collect it. They then pressed space to initiate a guessing trial.
+
+Participants received 6 blocks in total, with each block lasting 8 minutes. In other words, we used a design of fixed duration, rather than a fixed number of trials. Five participants were randomly selected, and the money they earned in a randomly selected block was awarded to them as an extra bonus.
+
+
+```{r load libraries}
+# load libraries
+library(knitr)
+library(kableExtra)
+library(Rmisc)
+library(psych)
+library(afex)
+
+library(patchwork)
+library(tidyverse)
+
+source("functions/pairwise_comparisons.R")
+
+theme_set(theme_bw() +
+            theme(legend.position = "top",
+                  legend.direction = "horizontal"))
+
+```
+
+
+```{r load data}
+d_main <- read_csv("../../data/processed/Gambling_ITC_main.csv")
+```
+
+# Participants
+
+```{r participants}
+demo <- d_main %>%
+  group_by(subjectID) %>%
+  sample_n(1) %>%
+  mutate(age = as.numeric(age))
+
+n_total <- nrow(demo)
+n_male <- sum(demo$gender == "male")
+n_female <- sum(demo$gender == "female")
+
+age_mean <- round(mean(demo$age), digits = 2)
+age_sd <- round(sd(demo$age), digits = 2)
+```
+
+In total, `r n_total` participants (`r n_male` males, `r n_female` females; M~age~ = `r age_mean`; SD~age~ = `r age_sd`) took part in the experiment for course credit.
+
+# Trial number
+
+Since in this experiment, participants received six blocks of fixed duration rather than fixed numbers of trials, first I count the number of trials finished by the participants, before any data exclusion.
+
+```{r trial number, results='asis'}
+trial_count <- d_main %>%
+  # count trial number per block
+  group_by(subjectID, block_number) %>%
+  summarize(n_trial = n()) %>%
+  # count trial number in total for each subject
+  group_by(subjectID) %>%
+  mutate(n_total = sum(n_trial)) %>%
+  # turn into wide format
+  pivot_wider(
+    id_cols = c(subjectID, n_total),
+    names_from = block_number,
+    names_prefix = "block_",
+    values_from = n_trial) %>%
+  ungroup()
+
+# get the descriptive information for trial number
+trial_count_summary <- trial_count %>%
+  select(-subjectID) %>%
+  describe()
+
+# do some formatting and show as table
+trial_count_summary %>%
+  mutate(
+    across(c(mean, sd, trimmed, mad, skew, kurtosis, se), ~round(.x, digits = 2))
+  ) %>%
+  kbl() %>%
+  kable_styling()
+  
+```
+
+# Quality checks
+
+Next I carry out quality checks to identify trials/participants of potentially low-effort responses.
+
+## Incomplete trials
+
+In each trial (consisting of one guessing game and one intertemporal choice), participants needed to make 5 consecutive responses. Since each block has a fixed duration, a block may thus end while participants are still in the middle of a trial. First, I count and exclude such incomplete trials.
+
+```{r incomplete trials}
+# the original number of trials
+n_before <- nrow(d_main)
+
+# exclude incomplete trials
+d_main <- d_main %>% drop_na()
+
+# trial number after excluding incomplete trials
+n_after <- nrow(d_main)
+
+# number of incomplete trials excluded
+n_incomplete <- n_before - n_after
+```
+
+In total, `r n_incomplete` incomplete trials were identified and removed. If the last trial in each block for all participants was incomplete, this would result in 47*6 = 282 trials. The identified number of incomplete trials was somewhat lower than this maximum value, suggesting that some blocks ended just after participants finished a trial.
+
+## Leaving experiment
+
+Each time when participants left the current experiment (e.g., switching to another tab of their web browser), the values starting with the prexi 'blur' would be incremented by 1. First, I check how often participants left the experiment tab during the experiment.
+
+```{r leaving experiment}
+d_main <- d_main %>%
+  # count in total, how often participants left the experiment in one trial
+  mutate(
+    blur_total = blur_guess_start + blur_guess_choice + blur_guess_outcome + 
+      blur_ITC_start + blur_ITC_choice + blur_ITC_wait + blur_ITC_collect + blur_ITC_outcome
+  ) 
+
+n_blur <- sum(d_main$blur_total > 0)
+
+# exclude trials where participants left the experiment
+d_main <- d_main %>%
+  filter(blur_total == 0)
+```
+
+Overall, participants left the experiment tab rather infrequently, in `r n_blur` trials in total. These trials were excluded.
+
+## Breaks in play
+
+Participants may also leave the experiment without switching to another tab of their web browser. The reaction times for all responses may provide some insights into this.
+
+```{r breaks in play, fig.height=6, fig.width=8}
+# turn RT data into long format
+d_rt <- d_main %>%
+  select(subjectID, block_number, trial_number, RT_guess_start:RT_ITC_collect) %>%
+  pivot_longer(
+    cols = RT_guess_start:RT_ITC_collect,
+    names_to = "response",
+    values_to = "rt"
+  ) %>%
+  mutate(
+    response = factor(response,
+                      levels = c("RT_guess_start", "RT_guess_choice", "RT_ITC_start",
+                                 "RT_ITC_choice", "RT_ITC_collect"),
+                      labels = c("Guess-Start", "Guess-Choice", "ITC-Start",
+                                 "ITC-Choice", "ITC-Collect"))
+  )
+
+# plot the RT distributions
+# for the purpose of plotting, turn all RTs > 5000 ms into 5000 ms
+d_rt %>%
+  mutate(rt = ifelse(rt >= 5000, 5000, rt)) %>%
+  ggplot(aes(rt)) +
+  geom_histogram(bins = 50) +
+  labs(x = "Response time (milliseconds)",
+       subtitle = "RTs longer than 5s are recoded as 5s for the purpose of plotting.") +
+  facet_wrap(~response, ncol = 3)
+
+```
+
+Participants overall responded quite fast, but there were also trials where they responded slowly (e.g., with RTs longer than 5 seconds). Next I exclude trials where any of the 5 responses was longer than 5000 milliseconds.
+
+```{r RT exclusion, fig.height=6, fig.width=8}
+d_rt <- d_rt %>%
+  mutate(rt_exclude = ifelse(rt > 5000, 1, 0)) %>%
+  group_by(subjectID, block_number, trial_number) %>%
+  summarize(rt_exclude_sum = sum(rt_exclude))
+
+# compute the proportion of trials exclude for each participant
+rt_exclusion <- d_rt %>%
+  group_by(subjectID, block_number) %>%
+  summarize(
+    ntrial = n(),
+    prop = mean(rt_exclude_sum > 0) * 100
+  )
+
+rt_exclusion %>%
+  ggplot(aes(subjectID, prop)) +
+  geom_point() +
+  labs(y = "Proportion of excluded trials (%)",
+       title = "Exclusion proportion per block") + 
+  facet_wrap(~block_number, ncol = 3)
+
+# exclude trials where any of the 5 responses was > 5s
+d_rt <- d_rt %>% filter(rt_exclude_sum == 0)
+
+d_main <- d_main %>%
+  filter(
+    RT_guess_start <= 5000,
+    RT_guess_choice <= 5000,
+    RT_ITC_start <= 5000,
+    RT_ITC_choice <= 5000,
+    RT_ITC_collect <= 5000
+  )
+
+# count and plot the number of remaining trials
+trial_count_after <- d_rt %>%
+  count(subjectID, block_number)
+
+trial_count_after %>%
+  ggplot(aes(subjectID, n)) +
+  geom_point() +
+  labs(y = "Number of trials left",
+       title = "Trials left per block") + 
+  facet_wrap(~block_number, ncol = 3)
+
+```
+
+# Starting ITC
+
+First, I examine the effect of the outcomes in the guessing game on how quickly participants initiated the intertemporal choice.
+
+```{r start RT plots, fig.width=6, fig.height=8}
+# compute the number of trials, mean and median startRT in each cell
+ITC_startRT <- d_main %>%
+  group_by(subjectID, block_number, guess_outcome) %>%
+  summarize(
+    ntrial = n(),
+    rt_mean = mean(RT_ITC_start),
+    rt_median = median(RT_ITC_start)
+  )
+
+# plot the mean number of trials across blocks
+trial_number_summary <- ITC_startRT %>%
+  summarySEwithin(measurevar = "ntrial",
+                  withinvars = c("block_number", "guess_outcome"),
+                  idvar = "subjectID")
+
+trial_number_plot <- trial_number_summary %>%
+  ggplot(aes(block_number, ntrial, group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = ntrial-ci, ymax = ntrial+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Block number", y = "Mean number of trials",
+       color = "Guess outcome")
+
+
+# plot the mean start RTs across blocks
+ITC_startRT_mean_summary <- ITC_startRT %>%
+  summarySEwithin(measurevar = "rt_mean",
+                  withinvars = c("block_number", "guess_outcome"),
+                  idvar = "subjectID")
+
+startRT_mean_plot <- ITC_startRT_mean_summary %>%
+  ggplot(aes(block_number, rt_mean, group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = rt_mean-ci, ymax = rt_mean+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Block number", y = "Mean start RT (milliseconds)",
+       color = "Guess outcome")
+
+# plot the median start RTs across blocks
+ITC_startRT_median_summary <- ITC_startRT %>%
+  summarySEwithin(measurevar = "rt_median",
+                  withinvars = c("block_number", "guess_outcome"),
+                  idvar = "subjectID")
+
+
+startRT_median_plot <- ITC_startRT_median_summary %>%
+  ggplot(aes(block_number, rt_median, group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = rt_median-ci, ymax = rt_median+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Block number", y = "Median start RT (milliseconds)",
+       color = "Guess outcome")
+
+# put the plots together
+startRT_plot <- trial_number_plot/startRT_mean_plot / startRT_median_plot +
+  plot_layout(guides = "collect")
+
+startRT_plot
+```
+
+
+```{r startRT analyses, results='asis'}
+# run a repeated-measures ANOVA on mean start RTs
+startRT_mean_anova <- aov_ez(
+  id = "subjectID",
+  dv = "rt_mean",
+  within = c("guess_outcome", "block_number"),
+  data = ITC_startRT)
+
+startRT_mean_anova <- nice(startRT_mean_anova)
+
+# run a repeated-measures ANOVA on median start RTs
+startRT_median_anova <- aov_ez(
+  id = "subjectID",
+  dv = "rt_median",
+  within = c("guess_outcome", "block_number"),
+  data = ITC_startRT)
+
+startRT_median_anova <- nice(startRT_median_anova)
+
+# show as tables
+startRT_mean_anova %>%
+  kbl(caption = "Repeated-measures ANOVA on mean start RTs") %>%
+  kable_styling()
+
+startRT_median_anova %>%
+  kbl(caption = "Repeated-measures ANOVA on median start RTs") %>%
+  kable_styling()
+
+```
+
+Overall, participants sped up across the blocks, but there is no effect of previous outcomes on how quickly they initiated the intertemporal choice part. The interaction effect is also not statistically significant. I nevertheless conduct pairwise comparisons (collapsing all blocks) to compare startRTs after different outcomes.
+
+```{r startRTs pairwise comparisons, results='asis'}
+# collapse all blocks
+ITC_startRT_per_subject <- ITC_startRT %>%
+  group_by(subjectID, guess_outcome) %>%
+  summarize(
+    rt_mean = mean(rt_mean),
+    rt_median = mean(rt_median)
+  )
+
+# turn into wide format for mean startRT
+startRT_mean_wide <- ITC_startRT_per_subject %>%
+  pivot_wider(
+    id_cols = subjectID,
+    names_from = guess_outcome,
+    values_from = rt_mean
+  )
+
+# pairwise comparisons on mean startRT
+mean_win_loss <- TES(startRT_mean_wide$win, startRT_mean_wide$loss, paired = T)
+mean_win_neutral <- TES(startRT_mean_wide$win, startRT_mean_wide$neutral, paired = T)
+mean_loss_neutral <- TES(startRT_mean_wide$loss, startRT_mean_wide$neutral, paired = T)
+
+# turn into wide format for median startRT
+startRT_median_wide <- ITC_startRT_per_subject %>%
+  pivot_wider(
+    id_cols = subjectID,
+    names_from = guess_outcome,
+    values_from = rt_median
+  )
+
+# pairwise comparisons on median startRT
+median_win_loss <- TES(startRT_median_wide$win, startRT_median_wide$loss, paired = T)
+median_win_neutral <- TES(startRT_median_wide$win, startRT_median_wide$neutral, paired = T)
+median_loss_neutral <- TES(startRT_median_wide$loss, startRT_median_wide$neutral, paired = T)
+
+# put all comparisons together
+startRT_pairwise <- bind_rows(
+  mean_win_loss, mean_win_neutral, mean_loss_neutral,
+  median_win_loss, median_win_neutral, median_loss_neutral
+)
+
+# do some formatting and show as table
+startRT_pairwise %>%
+  mutate(
+    Variable = rep(c("mean RT", "median RT"), each = 3),
+    Comparison = rep(c("Win vs. Loss", "Win vs. Neutral", "Loss vs. Neutral"), 2),
+    across(c(x_mean:upperCI), ~round(.x, digits = 1))
+  ) %>%
+  select(Variable, Comparison, x_mean:BayesF, gav) %>%
+  kbl(caption = "Pairwise comparisons on startRTs") %>%
+  kable_styling()
+```
+
+
+# Intertemporal choices
+
+Next, I examine the effects of prior outcomes on the intertemporal choices.
+
+## Overall
+
+```{r overall intertemporal choices, fig.width=6, fig.height=4}
+# calculate the proportion of choosing the immediate option in each cell
+ITC_choice <- d_main %>%
+  group_by(subjectID, guess_outcome, delay_time) %>%
+  summarize(
+    ntrial = n(),
+    immediate_prop = mean(ITC_choice == "immediate") * 100
+  )
+
+# plot the proportion of immediate choices in each cell
+ITC_choice_summary <- ITC_choice %>%
+  summarySEwithin(
+    measurevar = "immediate_prop",
+    idvar = "subjectID",
+    withinvars = c("guess_outcome", "delay_time"))
+
+ITC_choice_summary %>%
+  ggplot(aes(delay_time, immediate_prop, 
+             group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = immediate_prop-ci, ymax = immediate_prop+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Delay duration (seconds)", y = "Proportion of choosing the immediate option (%)",
+       color = "Guess outcome")
+
+```
+
+```{r overall intertemporal choices analysis, results='asis'}
+# run a repeated-measures ANOVA on the proportion of immediate choices
+ITC_choice_anova <- aov_ez(
+  id = "subjectID",
+  dv = "immediate_prop",
+  within = c("guess_outcome", "delay_time"),
+  data = ITC_choice)
+
+ITC_choice_anova <- nice(ITC_choice_anova)
+
+# show as tables
+ITC_choice_anova %>%
+  kbl(caption = "Repeated-measures ANOVA on the proportion of immediate choices") %>%
+  kable_styling()
+```
+
+Overall, both the main effects of prior outcome, the delay duration, and their interation effect are not statistically significant. The 5-s delay and the 10-s delay are not directly comparable, because the immediate amounts differ (in the 5-s delay, the immediate amounts varied from 1 to 16 cents; in the 10-s delay, the immediate ammounts varied from 1 to 8 cents). Next, I conduct pairwise comparisons between different outcomes for these two delay durations separately.
+
+```{r overall ITC pairwise comparisons, results='asis'}
+ITC_choice_wide <- ITC_choice %>%
+  pivot_wider(
+    id_cols = subjectID,
+    names_from = c(guess_outcome, delay_time),
+    values_from = immediate_prop
+  )
+
+# pairwise comparisons for the 5-s delay condition
+win_loss_delay5 <- TES(ITC_choice_wide$win_5, ITC_choice_wide$loss_5, paired = T)
+win_neutral_delay5 <- TES(ITC_choice_wide$win_5, ITC_choice_wide$neutral_5, paired = T)
+loss_neutral_delay5 <- TES(ITC_choice_wide$loss_5, ITC_choice_wide$neutral_5, paired = T)
+
+# pairwise comparisons for the 10-s delay condition
+win_loss_delay10 <- TES(ITC_choice_wide$win_10, ITC_choice_wide$loss_10, paired = T)
+win_neutral_delay10 <- TES(ITC_choice_wide$win_10, ITC_choice_wide$neutral_10, paired = T)
+loss_neutral_delay10 <- TES(ITC_choice_wide$loss_10, ITC_choice_wide$neutral_10, paired = T)
+
+
+# put all comparisons together
+ITC_choice_pairwise <- bind_rows(
+  win_loss_delay5, win_neutral_delay5, loss_neutral_delay5,
+  win_loss_delay10, win_neutral_delay10, loss_neutral_delay10
+)
+
+# do some formatting and show as table
+ITC_choice_pairwise %>%
+  mutate(
+    Delay = rep(c("5 s", "10 s"), each = 3),
+    Comparison = rep(c("Win vs. Loss", "Win vs. Neutral", "Loss vs. Neutral"), 2),
+    across(c(x_mean:upperCI), ~round(.x, digits = 1))
+  ) %>%
+  select(Delay, Comparison, x_mean:BayesF, gav) %>%
+  kbl(caption = "Pairwise comparisons on the proportion of immediate choices") %>%
+  kable_styling()
+```
+
+
+## Over time
+
+```{r ITC choices over time, fig.width=8, fig.height=6}
+# calculate the proportion of choosing the immediate option in each cell
+ITC_choice_over_time <- d_main %>%
+  group_by(subjectID, guess_outcome, delay_time, block_number) %>%
+  summarize(
+    ntrial = n(),
+    immediate_prop = mean(ITC_choice == "immediate") * 100
+  )
+
+# plot the proportion of immediate choices in each cell
+ITC_choice_over_time_summary <- ITC_choice_over_time %>%
+  summarySEwithin(
+    measurevar = "immediate_prop",
+    idvar = "subjectID",
+    withinvars = c("guess_outcome", "delay_time", "block_number"))
+
+ITC_choice_over_time_summary %>%
+  ggplot(aes(block_number, immediate_prop, 
+             group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = immediate_prop-ci, ymax = immediate_prop+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Part", y = "Proportion of choosing the immediate option (%)",
+       color = "Guess outcome") +
+  facet_wrap(~delay_time, ncol = 1)
+
+```
+
+```{r intertemporal choices analysis over time, results='asis'}
+# run a repeated-measures ANOVA on the proportion of immediate choices
+ITC_choice_over_time_anova <- aov_ez(
+  id = "subjectID",
+  dv = "immediate_prop",
+  within = c("guess_outcome", "delay_time", "block_number"),
+  data = ITC_choice_over_time)
+
+ITC_choice_over_time_anova <- nice(ITC_choice_over_time_anova)
+
+# show as tables
+ITC_choice_over_time_anova %>%
+  kbl(caption = "Repeated-measures ANOVA on the proportion of immediate choices") %>%
+  kable_styling()
+```
+
+Over time, participants chose the immediate option more frequently.
+
+## Matched & over time
+
+The above analysis may be subject to a limitation. That is, the intertemporal choices following each outcome may not be exactly matched, because we used blocks of fixed duration, and that some trials were excluded above. In this analysis, I select intertemporal choice trials only when they appear in all cells (i.e., after win, after loss, and after a neutral outcome). There are in total 72 unique trials. The program randomly presented these trials in the first 72 trials, and then again in the next 72 trials, regardless of how many trials participants finished. In this sample, every participant finished at least about 3 repetitions (i.e., 72*3 = 216 trials). I therefore focus on the first three repetitions for all participants. For each participant, I only include a certain intertemporal choice if it occurred in all three repetitions, and after all three types of outcomes. Thus, the intertemporal choices are exactly matched both across different guess outcomes and across the repetitions.
+
+```{r ITC choices - matched, fig.width=4, fig.height=6}
+# when the delay is 5 seconds, the immediate amount varies from 1 till 16 cents.
+# when the delay is 10 seconds, the immediate amount varies from 1 till 8 cents.
+# the delay amount is always 20 cents.
+# after taking the 3 possible outcomes into account (win, loss and neutral),
+# there are hence 3*16 + 3*8 = 72 unique trials.
+
+# we consider such 72 trials as one repetition. Participants finished at least about 3 reps.
+
+d_main <- d_main %>%
+  mutate(rep = ceiling(trial_number/72))
+
+# count the number of trials in each rep for each participant
+trial_rep_count <- d_main %>%
+  count(subjectID, rep)
+
+# most participants finished at least 3 reps,
+# for simplicity, here I first focus on the first three reps
+d_matched <- d_main %>%
+  filter(rep <= 3) %>%
+  # count how often a particular intertemporal choice trial occurs
+  group_by(subjectID, delay_time, immediate_amount) %>%
+  mutate(n = n()) %>%
+  # only include trials if it occurs in all three outcomes,
+  # and in all three repetitions
+  filter(n == 9)
+
+# calculate the proportion of choosing the immediate option in each cell
+ITC_choice_matched <- d_matched %>%
+  group_by(subjectID, guess_outcome, delay_time, rep) %>%
+  summarize(
+    ntrial = n(),
+    immediate_prop = mean(ITC_choice == "immediate") * 100
+  )
+
+# plot the proportion of immediate choices in each cell
+ITC_choice_matched_summary <- ITC_choice_matched %>%
+  summarySEwithin(
+    measurevar = "immediate_prop",
+    idvar = "subjectID",
+    withinvars = c("guess_outcome", "delay_time", "rep"))
+
+ITC_choice_matched_summary %>%
+  ggplot(aes(rep, immediate_prop, 
+             group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = immediate_prop-ci, ymax = immediate_prop+ci),
+                position = position_dodge(width = 0.5),
+                width = 0.25) +
+  labs(x = "Repetition", y = "Proportion of choosing the immediate option (%)",
+       color = "Guess outcome") +
+  facet_wrap(~delay_time, ncol = 1)
+```
+
+```{r ITC choices analyses - matched, results='asis'}
+# run a repeated-measures ANOVA on the proportion of immediate choices
+ITC_choice_matched_anova <- aov_ez(
+  id = "subjectID",
+  dv = "immediate_prop",
+  within = c("guess_outcome", "delay_time", "rep"),
+  data = ITC_choice_matched)
+
+ITC_choice_matched_anova <- nice(ITC_choice_matched_anova)
+
+# show as tables
+ITC_choice_matched_anova %>%
+  kbl(caption = "Repeated-measures ANOVA on the proportion of immediate choices") %>%
+  kable_styling()
+```
+
+The results matched the one obtained above with all trials. There is no significant effect of prior outcomes, and across the three repetitions, the probability of choosing the immediate option increased.
+
+## Amount effects
+
+Lastly, I explore whether the intertemporal choices participants made are sensitive to the immediate amounts. For this analysis, I divide the 5-s condition into 4 groups, with the immediate amounts varying from (1) 1 to 4 cents, (2) 5 to 8 cents, (3) 9 to 12 cents, and (4) 13 to 16 cents. The 10-s condition is divided into 2 groups, with the immediate amounts varying from (1) 1 to 4 cents, (2) 5-8 cents.
+
+```{r intertemporal choices amount effects, fig.width=6, fig.height=4}
+ITC_choice_amount <- d_main %>%
+  mutate(amount_level = ceiling(immediate_amount/4)) %>%
+  group_by(subjectID, guess_outcome, delay_time, amount_level) %>%
+  summarize(immediate_prop = mean(ITC_choice == "immediate") * 100)
+
+ITC_choice_amount_summary <- ITC_choice_amount %>%
+  summarySEwithin(
+    measurevar = "immediate_prop",
+    withinvars = c("guess_outcome", "delay_time", "amount_level"),
+    idvar = "subjectID"
+  ) %>%
+  mutate(
+    amount_level = factor(amount_level,
+                          levels = c(1, 2, 3, 4),
+                          labels = c("1-4", "5-8", "9-12", "13-16"))
+  )
+
+ITC_choice_amount_summary %>%
+  ggplot(aes(amount_level, immediate_prop,
+             group = guess_outcome, color = guess_outcome)) +
+  geom_point(position = position_dodge(width = 0.4)) +
+  geom_errorbar(aes(ymin = immediate_prop-ci, ymax=immediate_prop+ci),
+                position = position_dodge(width = 0.4), width = 0.25) +
+  labs(x = "Immediate amount", y = "Proportion of immediate choices (%)", 
+       color = "Prior outcome") +
+  facet_wrap(~delay_time, ncol = 2)
+
+```
+
+Participants clearly took both the immediate amount and the delay duration into accounts. As the immediate amount increased, the probability of choosing the immediate option increased in both delay conditions. When the immediate amounts were matched (the 1-4 and the 5-8 ranges), participants were more likely to choose the immediate option if the delay duration was long (i.e., 10 seconds) rather than short (i.e., 5 seconds).
+
+# Starting guess
+
+After finishing an intertemporal choice trial, participants needed to collect the reward and then initiate a guessing game. Here I examine the effects of reward amount on how quickly participants collected the reward, and how quickly they initiated the next guessing game.
+
+```{r collecting reward, fig.width=5, fig.height=5}
+d_collectRT <- d_main %>%
+  mutate(
+    received_amount = ifelse(ITC_choice == "immediate",
+                             immediate_amount, 20),
+    amount_level = ceiling(received_amount/4)
+    ) %>%
+  group_by(subjectID, delay_time, amount_level) %>%
+  summarize(collectRT = median(RT_ITC_collect))
+
+d_collectRT_summary <- d_collectRT %>%
+  summarySEwithin(
+    measurevar = "collectRT",
+    withinvars = c("delay_time", "amount_level"),
+    idvar = "subjectID"
+  ) %>%
+  mutate(
+    amount_level = factor(amount_level,
+                          levels = c(1, 2, 3, 4, 5),
+                          labels = c("1-4", "5-8", "9-12", "13-16", "20"))
+  )
+
+d_collectRT_summary %>%
+  ggplot(aes(amount_level, collectRT,
+             group = delay_time, color = delay_time)) +
+  geom_point(position = position_dodge(width = 0.4)) +
+  geom_errorbar(aes(ymin = collectRT-ci, ymax=collectRT+ci),
+                position = position_dodge(width = 0.4), width = 0.25) +
+  labs(x = "Received amount", y = "Median RT of collecting reward (milliseconds)", 
+       color = "Delay duration") 
+
+```
+
+```{r starting guessing game, fig.width=5, fig.height=5}
+d_startRT_guessing <- d_main %>%
+  mutate(
+    received_amount = ifelse(ITC_choice == "immediate",
+                             immediate_amount, 20),
+    amount_level = ceiling(received_amount/4)
+    ) %>%
+  group_by(subjectID, block_number) %>%
+  mutate(
+    prev_trial_number = lag(trial_number),
+    trial_diff = trial_number - prev_trial_number,
+    prev_amount_level = ifelse(trial_diff == 1,
+                               lag(amount_level), NA),
+    prev_delay_time = ifelse(trial_diff == 1,
+                               lag(delay_time), NA)
+  ) %>%
+  filter(!is.na(prev_amount_level)) %>%
+  group_by(subjectID, prev_delay_time, prev_amount_level) %>%
+  summarize(startRT = median(RT_guess_start))
+  
+d_startRT_guessing_summary <- d_startRT_guessing %>%
+  summarySEwithin(
+    measurevar = "startRT",
+    withinvars = c("prev_delay_time", "prev_amount_level"),
+    idvar = "subjectID"
+  ) %>%
+  mutate(
+    prev_amount_level = factor(prev_amount_level,
+                          levels = c(1, 2, 3, 4, 5),
+                          labels = c("1-4", "5-8", "9-12", "13-16", "20"))
+  )
+
+d_startRT_guessing_summary %>%
+  ggplot(aes(prev_amount_level, startRT,
+             group = prev_delay_time, color = prev_delay_time)) +
+  geom_point(position = position_dodge(width = 0.4)) +
+  geom_errorbar(aes(ymin = startRT-ci, ymax=startRT+ci),
+                position = position_dodge(width = 0.4), width = 0.25) +
+  labs(x = "Received amount in the previous trial", 
+       y = "Median RT of starting the guessing game (milliseconds)", 
+       color = "Delay duration in the previous trial") 
+
+```
+
+# Conclusion
+
+This is the first experiment in which I used a fixed duration, rather than a fixed number of trials. Surprisingly, post-loss speeding, an effect that seems to be quite robust and replicable so far, vanished in this experiment. In this experiment, the strategy to maximize one's earning is to do as many trials as possible within each block, as both the guessing game and the intertemporal choice offer positive expected value. There are indications that participants indeed realized this. For instance, they generally sped up in initiating the intertemporal choice, and also chose the immediate option more frequently over time. The motivation to maximize one's reward by responding as quickly as possible may override any effects of wins and losses. For follow-up studies, it may therefore be important to create situations where the best strategy is not to respond as quickly as possible, but within a certain range. A second possibility (not mutally exclusive) is that since participants knew that on the intertemporal choice trials they could receive a reward for sure (although the amount might vary), this motivated them to initiate the intertemporal choice trials quickly regardless of the outcome in the guessing game.
